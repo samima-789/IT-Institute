@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----- Remix Icons cdn ----->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!---- Bootstrap Link ------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>It-institute</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+        <header>
+            <div class="nav-bar">
+                <div class="bg-[rgba(255, 255, 255, 0.591)] backdrop-blur-2xl flex justify-between items-center header">
+                    <div class="logo">
+                        <h2 class="text-[#fb0c9c] font-extrabold text-3xl">Logo</h2>
+                    </div>
+                    <ul class="flex justify-center items-center gap-10">
+                        <li><a href="#" class="text-[#fb0c9c] text-sm cursor-pointer duration-500 hover:bg-whitete hover:text-[#5D54A4]">Home</a></li>
+                        <li><a href="#" class="text-[#fb0c9c] text-sm cursor-pointer duration-500 hover:bg-whitete hover:text-[#5D54A4]">About</a></li>
+                        <li><a href="#" class="text-[#fb0c9c] text-sm cursor-pointer duration-500 hover:bg-whitete hover:text-[#5D54A4]">Services</a></li>
+                        <li><a href="#" class="text-[#fb0c9c] text-sm cursor-pointer duration-500 hover:bg-whitete hover:text-[#5D54A4]">Blog</a></li>
+                        <li><a href="#" class="text-[#fb0c9c] text-sm cursor-pointer duration-500 hover:bg-whitete hover:text-[#5D54A4]">Contact</a></li>
+                        <li>
+                            <a href="#" class="icons flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass text-[#fb0c9c] text-sm cursor-pointer duration-500 hover:bg-white p-2" id="search"></i>  
+                            <i class="fa-regular fa-user text-[#fb0c9c] text-sm cursor-pointer duration-50 p-2 hover:text-[#5D54A4]" id="btn_form"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="hidden s-icons">
+                        <a href="#" id="search1"><i class="fa-solid fa-magnifying-glass text-black tracking-widest duration-500"></i></a>
+                        <a href="#" id="btn_form2"><i class="fa-regular fa-user"></i></a>
+                        <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                </div>
+    
+                <div class="home">
+                    <div class="search-bar absolute min-h-96 w-full bg-[#0000000d] backdrop-blur-2xl flex justify-start items-center flex-col hidden z-[1000]">
+                        <div>
+                            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                            <input type="text" placeholder="Search Here">
+                        </div>
+                    </div>
+                    <div class="form show-form bg-[#0000000d] backdrop-blur-2xl ">
+                        <div class="form_container h-full w-full flex gap-5  justify-center items-center flex-col">
+                            <div class="form_main h-[450px] w-[420px] bg-[#0000000d] flex justify-center items-center flex-col rounded-2xl shadow-[10px 10px 8px rgba(0, 0, 0, 0.2)] backdrop-blur-2xl p-4 border border-[rgba(255, 255, 255, 0.5)] relative overflow-hidden">
+                                <a href="#"><i class="fa-solid fa-xmark" id="close_form"></i></a>
+                            <h1>Log In</h1>
+                            <div class="email">
+                                <label for="">Email</label>
+                                <input type="email" placeholder="Write Your Email">
+                            </div>
+                            <div class="password">
+                                <label for="">Password</label>
+                                <input type="password" placeholder="Write Your Password">
+                            </div>
+                            <a href="#">Forget Password?</a>
+                            <p>Don't Have an Account? <a href="#">Sign Up</a></p>
+                            <button>Log In</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </header>
+
+
+        <section class="main swiper mySwiper">
+             <div class="wrapper swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="image/slider-img-1.jpg" class="h-full w-full object-cover">
+                    <div class="absolute top-36 left-11 w-full z-[100]">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 image-content">
+                                <h1 class="text-white text-5xl font-bold leading-tight">Learn a skill
+                                    <br /><span class="text-[#fb0c9c]">world is yours</span>
+                                </h1>
+                                <p class="text-[#b0b0b0] w-4/5 mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto a voluptates assumenda rerum corrupti magni, similique nisi molestias hic error itaque voluptatibus nihil porro ab.</p>
+                                <button class="h-10 w-1/4 bg-[#fb0c9c] text-white rounded-lg border-none mt-4 duration-500 hover:bg-white">Learn More</button>
+                                <button class="h-10 w-1/4 bg-[#fb0c9c] text-white rounded-lg border-none mt-4 ml-3 duration-500 hover:bg-white ">Browse Course</button>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img src="image/pic-1.png" class="w-5/6 animate-pulse">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <img src="image/slider-img-2.jpg" class="h-full w-full object-cover">
+                    <div class="absolute top-36 left-11 w-full z-[100]">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 image-content">
+                                <h1 class="text-white text-5xl font-bold leading-tight">Become An It Pro & Rule 
+                                    <br /><span class="text-[#fb0c9c]">The Digital World</span>
+                                </h1>
+                                <p class="text-[#b0b0b0] w-4/5 mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto a voluptates assumenda rerum corrupti magni, similique nisi molestias hic error itaque voluptatibus nihil porro ab.</p>
+                                <button class="h-10 w-1/4 bg-[#fb0c9c] text-white rounded-lg border-none mt-4 duration-500 hover:bg-white">Learn More</button>
+                                <button class="h-10 w-1/4 bg-[#fb0c9c] text-white rounded-lg border-none mt-4 ml-3 duration-500 hover:bg-white">Join Free Seminer</button>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img src="image/pic-2.png" class="w-5/6 animate-pulse">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <img src="image/slider-img-3.jpg" class="h-full w-full object-cover">
+                    <div class="absolute top-36 left-11 w-full z-[100]">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 image-content">
+                                <h1 class="text-white text-5xl font-bold leading-tight">Visit Our
+                                    <br /><span class="text-[#fb0c9c]">Beautiful Campus</span>
+                                </h1>
+                                <p class="text-[#b0b0b0] w-4/5 mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto a voluptates assumenda rerum corrupti magni, similique nisi molestias hic error itaque voluptatibus nihil porro ab.</p>
+                                <button class="h-10 w-1/4 bg-[#fb0c9c] text-white rounded-lg border-none mt-4 duration-500 hover:bg-white">Learn More</button>
+                                <button class="h-10 w-1/4 bg-[#fb0c9c] text-white rounded-lg border-none mt-4 ml-3 duration-500 hover:bg-white">For Appointment</button>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img src="image/pic-3.png" class="w-5/6 animate-pulse">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+            <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                  <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>    
+              </div>
+        </section>
+
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="admission-part w-5/6 h-f p-10  m-auto rounded-full relative">
+                            <div class="admission-header text-center">
+                                <h1 class="text-5xl text-[#fb0c9c] font-bold p-3">Admission Time</h1>   
+                            </div>
+                            <div class="admission-content text-center p-3">
+                                <span class="text-xl leading-10"><i class="fa-regular fa-calendar-check text-[#fb0c9c] text-xl"></i> <b>Admission Start:</b> 24 January 2024</span>
+                                <span class="ml-7 text-xl leading-10"><i class="fa-regular fa-bookmark text-[#fb0c9c] text-xl"></i> <b>Last Admission:</b> 31 January 2024</span>
+                                <p class="text-xl leading-10"><i class="fa-regular fa-bell text-[#fb0c9c] text-xl"></i> <b>Batch Timings:</b> Friday & Saturday(06:00PM to 08:30PM)</p>
+                                <p class="text-xl leading-10"><i class="fa-solid fa-desktop text-[#fb0c9c] text-xl"></i> <b>Class Start:</b> 01 February 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <div class="row p-3">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="image/about.jpg" class="object-cover">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 p-5">
+                        <h2 class=" text-5xl font-medium">Why choose It Institute?</h2>
+                        <h4 class="text-3xl text-[#fb0c9c] pt-3">Strengths of It Institutte</h4>
+                        <p class="leading-7 pt-3 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis officia voluptatibus cumque sint vero assumenda obcaecati ipsa? Iusto at, laborum recusandae laboriosam obcaecati eaque dolores pariatur ab consectetur voluptatem nulla! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint dolore velit voluptate ad. Quisquam autem corrupti laborum dolor nam repellat?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <div class="course-heading text-center">
+                    <h2 class="text-5xl font-medium ">Our Course</h2>
+                </div>
+                <div class="custom-row pt-12 flex flex-col">
+                    <div class="custom-grid-2 home-all-courses-single block w-64">
+                        <a href="#" class="block p-3 shadow-[0px_10px_15px_rgba(0,0,0,0.05)] h-full rounded-2xl text-center">
+                            <img src="image/course-icon-1.png" class="m-auto">
+                            <h4 class="text-xl font-semibold mb-2">Website Design & Development</h4>
+                            <p class="m-0 leading-10 text-[14px] text-[#7E8991] relative inline-block">Learn More <i class="fa-regular fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-row pt-12 flex flex-col">
+                    <div class="custom-grid-2 home-all-courses-single block w-64">
+                        <a href="#" class="block p-3 shadow-[0px_10px_15px_rgba(0,0,0,0.05)] h-full rounded-2xl text-center">
+                            <img src="image/course-icon-1.png" class="m-auto">
+                            <h4 class="text-xl font-semibold mb-2">Website Design & Development</h4>
+                            <p class="m-0 leading-10 text-[14px] text-[#7E8991] relative inline-block">Learn More <i class="fa-regular fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-row pt-12 flex flex-col">
+                    <div class="custom-grid-2 home-all-courses-single block w-64 ">
+                        <a href="#" class="block p-3 shadow-[0px_10px_15px_rgba(0,0,0,0.05)] h-full rounded-2xl text-center">
+                            <img src="image/course-icon-1.png" class="m-auto">
+                            <h4 class="text-xl font-semibold mb-2">Website Design & Development</h4>
+                            <p class="m-0 leading-10 text-[14px] text-[#7E8991] relative inline-block">Learn More <i class="fa-regular fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-row pt-12 flex flex-col">
+                    <div class="custom-grid-2 home-all-courses-single block w-64 ">
+                        <a href="#" class="block p-3 shadow-[0px_10px_15px_rgba(0,0,0,0.05)] h-full rounded-2xl text-center">
+                            <img src="image/course-icon-1.png" class="m-auto">
+                            <h4 class="text-xl font-semibold mb-2">Website Design & Development</h4>
+                            <p class="m-0 leading-10 text-[14px] text-[#7E8991] relative inline-block">Learn More <i class="fa-regular fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-row pt-12 flex flex-col">
+                    <div class="custom-grid-2 home-all-courses-single block w-64">
+                        <a href="#" class="block p-3 shadow-[0px_10px_15px_rgba(0,0,0,0.05)] h-full rounded-2xl text-center">
+                            <img src="image/course-icon-1.png" class="m-auto">
+                            <h4 class="text-xl font-semibold mb-2">Website Design & Development</h4>
+                            <p class="m-0 leading-10 text-[14px] text-[#7E8991] relative inline-block">Learn More <i class="fa-regular fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-row pt-12 flex flex-col">
+                    <div class="custom-grid-2 home-all-courses-single block w-64">
+                        <a href="#" class="block p-3 shadow-[0px_10px_15px_rgba(0,0,0,0.05)] h-full rounded-2xl text-center">
+                            <img src="image/course-icon-1.png" class="m-auto">
+                            <h4 class="text-xl font-semibold mb-2">Website Design & Development</h4>
+                            <p class="m-0 leading-10 text-[14px] text-[#7E8991] relative inline-block">Learn More <i class="fa-regular fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-row pt-12 flex flex-col">
+                    <div class="custom-grid-2 home-all-courses-single block w-64">
+                        <a href="#" class="block p-3 shadow-[0px_10px_15px_rgba(0,0,0,0.05)] h-full rounded-2xl text-center">
+                            <img src="image/course-icon-1.png" class="m-auto">
+                            <h4 class="text-xl font-semibold mb-2">Website Design & Development</h4>
+                            <p class="m-0 leading-10 text-[14px] text-[#7E8991] relative inline-block">Learn More <i class="fa-regular fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-row pt-12 flex flex-col">
+                    <div class="custom-grid-2 home-all-courses-single block w-64">
+                        <a href="#" class="block p-3 shadow-[0px_10px_15px_rgba(0,0,0,0.05)] h-full rounded-2xl text-center">
+                            <img src="image/course-icon-1.png" class="m-auto">
+                            <h4 class="text-xl font-semibold mb-2">Website Design & Development</h4>
+                            <p class="m-0 leading-10 text-[14px] text-[#7E8991] relative inline-block">Learn More <i class="fa-regular fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+<script src="js/script.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+       <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 50,
+          centeredSlides: true,
+          autoplay: {
+            delay: 6000,
+            disableOnInteraction: false
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+          },
+          on: {
+            autoplayTimeLeft(s, time, progress) {
+              progressCircle.style.setProperty("--progress", 1 - progress);
+              progressContent.textContent = `${Math.ceil(time / 1500)}s`;
+            }
+          }
+        });
+      </script>
+    
+    
+</body>
+</html>
