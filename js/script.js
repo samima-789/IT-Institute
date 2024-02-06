@@ -37,6 +37,20 @@ close_form.addEventListener("click",function(){
 let menu = document.querySelector("ul")
 let bars = document.querySelector("fa-solid fa-bars")
 
-bars.addEventListener("click",function(){
-    menu.classList.toggle("show_menu")
-})
+//bars.addEventListener("click",function(){
+   // menu.classList.toggle("show_menu")
+//})
+var $grid = $('.items').isotope({
+    
+});
+
+$('.menu').on( 'click', 'li', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+
+$('.menu').on( 'click', 'li', function() {
+  $(this).activeClass('active').siblings.removeClass('active');
+
+});
+

@@ -47,6 +47,27 @@
      .main{
       height: 100vh;
      }
+
+
+     .counter-up{
+      padding: 50px 50px 0 50px;
+     }
+
+     .content .box{
+      width: calc(50% - 30px);
+      margin-bottom: 50px;
+     }
+
+     .testi .review-wrapper{
+      flex-direction: row;
+      padding: 30px 100px;
+    }
+    
+
+    .testi .thumbnail{
+      width: 200px;
+      height: 200px;
+    }
     
   }
   
@@ -81,6 +102,17 @@
     .form_main{
         top: 10%;
         width: 380px;
+    }
+
+    .testi .review-wrapper{
+      flex-direction: row;
+      padding: 30px 100px;
+    }
+    
+
+    .testi .thumbnail{
+      width: 200px;
+      height: 200px;
     }
     
   }
@@ -119,7 +151,26 @@
         top: 10%;
         width: 280px;
     }
+
+    .counter-up::before{
+      min-height: 123vh;
+    }
+
+    .content .box{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .testi .review-wrapper{
+      flex-direction: row;
+      padding: 30px 100px;
+    }
     
+
+    .testi .thumbnail{
+      width: 100px;
+      height: 100px;
+    }
     
   }
   
@@ -154,6 +205,17 @@
         font-size: 12px;
         top: 10%;
         width: 280px;
+    }
+
+    .testi .review-wrapper{
+      flex-direction: row;
+      padding: 30px 100px;
+    }
+    
+
+    .testi .thumbnail{
+      width: 100px;
+      height: 100px;
     }
     
     
