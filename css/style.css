@@ -13,24 +13,57 @@ section{
     margin-bottom: 100px;
 }
 
+.container{
+    max-width: 1286px;
+}
+
 a{
     text-decoration: none;
 }
 
 /*----- Header -----*/
-.header{
-    padding: 20px 8%;
+.header-container{
+    height: 100vh;
+    width: 100%;
 }
+
+.header{
+    height: 10vh;
+    width: 100%;
+    background-color: #5e2ced;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+header ul li a{
+    color: #000;
+    cursor: pointer;
+    transition: all .5s;
+}
+.icons{
+    display: flex;
+    gap: 20px;
+}
+
 .icons a{
     color: #000;
 }
-.s-icons a i{
+.sicons{
+    display: none;
+}
+.sicons a{
     color: #000;
     letter-spacing: 10px;
     transition: all .5s;
-}
-.s-icons a i:hover{
-    background-color: #fff;
 }
 .search-bar{
     position: absolute;
@@ -44,49 +77,51 @@ a{
     flex-direction: column;
     padding: 100px 0;
     display: none;
-    z-index: 1000;
 }
+
 .show_searchbar{
     display: block;
 }
+
 .search-bar div{
     height: 180px;
     width: 60%;
     margin: 0 auto;
-    background-color: 1w;
+    background-color: rgba(255, 255, 255, 0.178);
     display: flex;
     justify-content: center;
     overflow: hidden;
-    border-radius: 10px;
     padding: 0 5%;
     flex-direction: column;
     position: relative;
 }
+
 .search-bar div a{
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1px 10px;
+    top: -2px;
+    right: -2px;
+    margin-bottom: 50px;
+    padding: 4px 14px;
     background-color: #fff;
     color: #000;
-    border-radius: 10px;
-    font-size: 20px;
+    border-radius: 3px;
+    font-size: 1.9rem;
 }
-.search-bar div a input{
+.search-bar div input{
     height: 54px;
     width: 100%;
     padding-left: 20px;
     outline: none;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.674);
     background-color: rgba(0, 0, 0, 0.1);
 }
 .search-bar div input::placeholder{
-    color: #b0b0b0;
-    padding: 10px;
+    color: #fff;
 }
+
 .form{
     position: absolute;
     height: 90vh;
@@ -96,21 +131,45 @@ a{
     align-items: center;
     flex-direction: column;
     display: none;
-    z-index: 1000;
 }
 .show_form{
     display: block;
-    background-color: rgba(255, 255, 255, 0);
 }
+.form_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form_main{
+    height: 450px;
+    width: 420px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 16px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(30px);
+    padding: 0 3%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
 #close_form{
     color: #000;
     font-size: 1.9rem;
     position: absolute;
-    top: 1px;
-    right: 1px;
-    padding: 1px 10px;
+    top: -5px;
+    right: -6px;
+    padding: 15px 18px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 12px;
 }
 .email,.password{
     width: 100%;
@@ -122,8 +181,9 @@ a{
 .email label{
     margin-top: 20px;
 }
+
 label{
-    color: #fff;
+    color: #000;
     margin-bottom: 5px;
 }
 .email input,.password input{
@@ -133,50 +193,33 @@ label{
     margin-bottom: 20px;
     outline: none;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.107);
+    background-color: rgba(255, 255, 255, 0.107);
     border: 1px solid rgba(255, 255, 255, 0.591);
     color: #fff;
 }
 .email input::placeholder,.password input::placeholder{
-    color: #b0b0b0;
+    color: #000;
 }
-.form_main p{
+.form_main p a,.form_main a{
     margin-top: -8px;
     margin-bottom: 15px;
-    color: #fff;
-}
-.form_main a{
-    color: #5e2ced;
-    font-weight: 500;
-    margin-top: -8px;
-    margin-bottom: 15px;
-
-}
-.form_main p a{
-    color: #5e2ced;
-    font-weight: 900;
-    text-decoration: underline;
+    color: #000;
 }
 button{
     height: 40px;
     width: 100%;
-    background-color: #fff;
+    background-color: #000;
     border-radius: 20px;
     border: none;
-    color: #5e2ced;
+    color: #fff;
     margin-top: 25px;
     transition: .5s;
 }
-button:hover{
-    background-color: royalblue;
-}
 .form h1{
-    color: #5D54A4;
+    color: #fff;
     font-size: 2.3rem;
-    font-weight: 800;
     margin-top: -6%;
 }
-
 /*----- HERO -----*/
 .main{
     height: 88vh;

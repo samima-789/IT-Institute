@@ -25,79 +25,54 @@
     </head>
     <body>
         <!----- HEADER ----->
-        <header class="relative">
-            <div class="nav-bar">
-                <div
-                    class="bg-[#5e2ced] backdrop-blur-2xl flex justify-between items-center header">
+        <header>
+            <div class="header-container">
+                <div class="header">
                     <div class="logo">
-                        <h2
-                            class="text-white font-extrabold text-3xl">Logo</h2>
+                        <h2>LOGO</h2>
                     </div>
-
-                    <ul class="flex justify-center items-center gap-10">
-                        <li><a href="#"
-                                class="text-white text-sm cursor-pointer">Home</a></li>
-                        <li><a href="#"
-                                class="text-white text-sm cursor-pointer">About</a></li>
-                        <li><a href="#"
-                                class="text-white text-sm cursor-pointer">Services</a></li>
-                        <li><a href="#"
-                                class="text-white text-sm cursor-pointer">Blog</a></li>
-                        <li><a href="#"
-                                class="text-white text-sm cursor-pointer">Contact</a></li>
-                        <li>
-                            <a href="#" class="icons flex gap-4">
-                                <i
-                                    class="fa-solid fa-magnifying-glass text-white text-sm cursor-pointer p-2"
-                                    id="search"></i>
-                                <i
-                                    class="fa-regular fa-user text-white text-sm cursor-pointer p-2"
-                                    id="btn_form"></i>
-                            </a>
-                        </li>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" class="icons">
+                            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                            <i class="fa-regular fa-user" id="btn_form"></i>
+                        </a></li>
                     </ul>
 
-                    <div class="hidden s-icons">
-                        <a href="#" id="search1"><i
-                                class="fa-solid fa-magnifying-glass text-black tracking-widest duration-500"></i></a>
-                        <a href="#" id="btn_form2"><i
-                                class="fa-regular fa-user"></i></a>
-                        <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    <div class="sicons">
+                        <a href="#" id="search1"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" id="btn_form2"><i class="fa-regular fa-user"></i></a>
+                        <a href="#"><i class="fa-solid fa-bars-staggered"></i></a>
                     </div>
                 </div>
 
                 <div class="home">
-                    <div
-                        class="search-bar absolute min-h-96 w-full bg-[#0000000d] backdrop-blur-2xl flex justify-start items-center flex-col hidden z-[1000]">
+                    <div class="search-bar">
                         <div>
-                            <a href="#" id="close"><i
-                                    class="fa-solid fa-xmark"></i></a>
+                            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
                             <input type="text" placeholder="Search Here">
                         </div>
                     </div>
-                    <div
-                        class="form show-form bg-[#0000000d] backdrop-blur-2xl ">
-                        <div
-                            class="form_container h-full w-full flex gap-5  justify-center items-center flex-col">
-                            <div
-                                class="form_main h-[450px] w-[420px] bg-[#0000000d] flex justify-center items-center flex-col rounded-2xl shadow-[10px 10px 8px rgba(0, 0, 0, 0.2)] backdrop-blur-2xl p-4 border border-[rgba(255, 255, 255, 0.5)] relative overflow-hidden">
-                                <a href="#"><i class="fa-solid fa-xmark"
-                                        id="close_form"></i></a>
-                                <h1>Log In</h1>
-                                <div class="email">
-                                    <label for>Email</label>
-                                    <input type="email"
-                                        placeholder="Write Your Email">
-                                </div>
-                                <div class="password">
-                                    <label for>Password</label>
-                                    <input type="password"
-                                        placeholder="Write Your Password">
-                                </div>
-                                <a href="#">Forget Password?</a>
-                                <p>Don't Have an Account? <a href="#">Sign
-                                        Up</a></p>
-                                <button>Log In</button>
+                    <div class="form">
+                        <div class="form_container">
+                            <div class="form_main">
+                                <a><i class="fa-solid fa-xmark" id="close_form"></i></a>
+                            <h1>Log In</h1>
+                            <div class="email">
+                                <label for="">Email</label>
+                                <input type="email" placeholder="Enter Your Email">
+                            </div>
+                            <div class="password">
+                                <label for="">Password</label>
+                                <input type="password" placeholder="Enter Your Password">
+                            </div>
+                            <a href="#">Forget Password</a>
+                            <p>Don't Have an Account? <a href="#">Sign In</a></p>
+                            <button>Log In</button>
                             </div>
                         </div>
                     </div>
@@ -523,7 +498,7 @@
 
 
         <!----- OUR GELLARY ----->
-        <section>
+        <!-- <section>
             <div class="container">
                 <div class="course-heading text-center">
                     <h2 class="text-5xl font-medium ">Our Gallery</h2>
@@ -604,7 +579,7 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
 
         <!----- OUR REVIEW ----->
         <section>
@@ -693,7 +668,7 @@
         </section>
 
         <!----- FOOTER ----->
-        <footer class="new_footer_area bg_color">
+        <footer class="new_footer_area bg_color mb-0">
             <div class="new_footer_top">
                 <div class="container">
                     <div class="row">
