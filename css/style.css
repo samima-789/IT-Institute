@@ -10,7 +10,7 @@
 }
 
 section{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .container{
@@ -21,20 +21,23 @@ a{
     text-decoration: none;
 }
 
+
+
 /*----- Header -----*/
 .header-container{
     height: 100vh;
     width: 100%;
+    
 }
 
 .header{
-    height: 10vh;
+    height: 12vh;
     width: 100%;
     background-color: #5e2ced;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 8%;
+    padding: 3% 8%;
 }
 
 header ul{
@@ -45,7 +48,7 @@ header ul{
 }
 
 header ul li a{
-    color: #000;
+    color: #fff ;
     cursor: pointer;
     transition: all .5s;
 }
@@ -64,6 +67,15 @@ header ul li a{
     color: #000;
     letter-spacing: 10px;
     transition: all .5s;
+}
+
+.home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1000;
 }
 .search-bar{
     position: absolute;
@@ -126,6 +138,8 @@ header ul li a{
     position: absolute;
     height: 90vh;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,6 +184,7 @@ header ul li a{
     padding: 15px 18px;
     background-color: #fff;
     border-radius: 12px;
+    cursor: pointer;
 }
 .email,.password{
     width: 100%;
@@ -183,7 +198,7 @@ header ul li a{
 }
 
 label{
-    color: #000;
+    color: #fff;
     margin-bottom: 5px;
 }
 .email input,.password input{
@@ -198,17 +213,20 @@ label{
     color: #fff;
 }
 .email input::placeholder,.password input::placeholder{
-    color: #000;
+    color: #fff;
 }
-.form_main p a,.form_main a{
+.form_main a{
     margin-top: -8px;
     margin-bottom: 15px;
-    color: #000;
+    color: #fff;
+}
+.form_main p{
+    color: #5e2ced;
 }
 button{
     height: 40px;
     width: 100%;
-    background-color: #000;
+    background-color: #5e2ced;
     border-radius: 20px;
     border: none;
     color: #fff;
@@ -278,26 +296,70 @@ button{
 
 /*----- COUNTER UP -----*/
 .counter-up{
-    min-height: 60vh;
-    background: url(../image/counter-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    background-attachment: fixed;
-    padding: 0 50px;
-    position: relative;
+background: url(../image/counterup.jpg) no-repeat;
+min-height: 50vh;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+margin: 0 auto ;
+background-size: cover;
+background-attachment: fixed;
+position: relative;
 }
 .counter-up::before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: 60vh;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+position: absolute;
+content: '';
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background: rgba(0, 0, 0, 0.8);
 }
+.counter-up .content{
+position: relative;
+z-index: 1;
+flex-wrap: wrap;
+display: flex;
+width: 100%;
+height: 100%;
+margin: 0 auto;
+align-items: center;
+justify-content: space-between;
+}
+.content .box{
+width: calc(25% - 30px);
+border-radius: 5px;
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+border-radius: 5px;
+}
+.content .box .icon{
+background-color: #ccc;
+width: 60px;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50px;
+font-size: 35px;
+color: #6a7695;
+}
+.content .box .counter{
+font-size: 35px;
+color: #5e2ced;
+font-weight: 700;
+font-family: sans-serif;
+}
+.content .box .text{
+color: #ccc;
+font-weight: 400;
+font-size: 20px;
+}
+
 
 /*----- ISOTOP -----*/
 .menu li.active{
@@ -558,8 +620,8 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     bottom: 0;
     left: 30%;
-    -webkit-animation: myfirst 22s linear infinite;
-    animation: myfirst 22s linear infinite;
+    -webkit-animation: footer_bg 22s linear infinite;
+    animation: footer_bg 22s linear infinite;
 }
 .new_footer_top .footer_bg .footer_bg_two {
     background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyLGwEUVwPK6Vi8xXMymsc-ZXVwLWyXhogZxbcXQYSY55REw_0D4VTQnsVzCrL7nsyjd0P7RVOI5NKJbQ75koZIalD8mqbMquP20fL3DxsWngKkOLOzoOf9sMuxlbyfkIBTsDw5WFUj-YJiI50yzgVjF8cZPHhEjkOP_PRTQXDHEq8AyWpBiJdN9SfQA/s16000/cyclist.gif") no-repeat center center;
@@ -569,10 +631,10 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0;
     left: 38%;
     position: absolute;
-    -webkit-animation: myfirst 30s linear infinite;
-    animation: myfirst 30s linear infinite;
+    -webkit-animation: footer_bg 30s linear infinite;
+    animation: footer_bg 30s linear infinite;
 }
-@-moz-keyframes myfirst {
+@-moz-keyframes footer_bg {
   0% {
     left: -25%;
   }
@@ -580,7 +642,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 100%;
   }
 }
-@-webkit-keyframes myfirst {
+@-webkit-keyframes footer_bg {
   0% {
     left: -25%;
   }
@@ -588,7 +650,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 100%;
   }
 }
-@keyframes myfirst {
+@keyframes footer_bg {
   0% {
     left: -25%;
   }
@@ -596,3 +658,114 @@ h1, h2, h3, h4, h5, h6 {
     left: 100%;
   }
 }
+
+
+
+
+
+
+/*--============================ ABOUT PAGE START================================--*/
+#mission .mission_menu {
+    background: #faf9fd;
+    border-radius: 15px;
+    padding-top: 30px;
+    padding-bottom: 28px;
+  }
+
+  #mission .mission_menu ul {
+    border: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  #mission .mission_menu ul li {
+    display: block;
+  }
+
+  #mission .mission_menu ul li button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    color: #605f62;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+    padding-left: 27px;
+    width: 100%;
+    line-height: 54px;
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+    border-left: 4px solid transparent;
+    font-family: 'Inter', sans-serif !important;
+  }
+
+  #mission .mission_menu ul li button svg {
+    margin-right: 23px;
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+  }
+
+  #mission .mission_menu ul li button svg path {
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+    fill: rgba(0, 0, 0, 0.27);
+  }
+
+  #mission .mission_menu ul li button:hover {
+    border-left: 4px solid #5e2ced;
+    background: #fff;
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+  }
+
+  #mission .mission_menu ul li button:hover svg path {
+    fill: #5e2ced;
+  }
+
+  #mission .mission_menu ul li button.active {
+    border-left: 4px solid #5e2ced;
+  }
+
+  #mission .mission_menu ul li button.active svg path {
+    fill: #5e2ced;
+  }
+  
+  #mission .mission_menu #myTab img{
+    padding: 3px;
+  }
+
+  #mission .mission_body h3 {
+    color: #1f1e1e;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+
+    padding-bottom: 12px;
+  }
+
+  #mission .mission_body p {
+    color: #605f62;
+    text-align: left;
+    padding-left: 8px;
+  }
+
+  #mission .mission_body p span {
+    padding: 15px 0;
+    display: block;
+  }
+
+  #mission .mission_img {
+    text-align: center;
+  }
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background: none;
+  }

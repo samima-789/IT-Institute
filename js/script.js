@@ -1,4 +1,4 @@
-// ----- SEARCHBAR & ACCOUNT ----- //
+// ----- HEADER ----- //
 let btnsearch = document.querySelector("#search")
 //let btnsearch2 = document.querySelector("search1")
 let searchbar = document.querySelector(".search-bar")
@@ -8,21 +8,16 @@ let close = document.querySelector("#close")
 btnsearch.addEventListener("click",function(){
     searchbar.classList.toggle("show_searchbar")
 })
-
 // btnsearch2.addEventListener("click",function(){
 //   searchbar.classList.toggle("show_searchbar")
 // })
-
 close.addEventListener("click",function(){
     searchbar.classList.toggle("show_searchbar")
 })
-
-
 let btn_form =document.querySelector("#btn_form")
 //let btn_form2 =document.querySelector("#btn_form2")
 let form =document.querySelector(".form")
 let close_form =document.querySelector("#close_form")
-
 btn_form.addEventListener("click",function(){
     form.classList.toggle("show_form")
 })
@@ -32,16 +27,17 @@ btn_form.addEventListener("click",function(){
 close_form.addEventListener("click",function(){
     form.classList.toggle("show_form")
 })
-
-
 let menu = document.querySelector("ul")
 let bars = document.querySelector(".fa-bars-staggered")
-
 bars.addEventListener("click",function(){
   menu.classList.toggle("show_menu")
 })
 
+
+
+
 // ----- HERO ---- //
+/*----- HERO BACKGROUND SLIDER -----*/
 $(document).ready(function(){
     const progressCircle = document.querySelector(".autoplay-progress svg");
         const progressContent = document.querySelector(".autoplay-progress span");
@@ -67,13 +63,6 @@ $(document).ready(function(){
             }
           }
         });
-
-        $(".counter").counterUp({
-             delay: 10,
-             time: 1200
-        });
-
-
     var swiper = new Swiper('.swiper', {
         spaceBetween: 50,
           centeredSlides: true,
@@ -81,7 +70,6 @@ $(document).ready(function(){
             delay: 5000,
             disableOnInteraction: false
           },
-  
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -91,7 +79,7 @@ $(document).ready(function(){
   });
 
 
-// ----- ISOTOP ----- //
+// ----- GALLERY ISOTOP ----- //
 var $grid = $('.items').isotope({   
 });
 $('.menu').on( 'click', 'li', function() {
@@ -101,6 +89,7 @@ $('.menu').on( 'click', 'li', function() {
 $('.menu').on( 'click', 'li', function() {
   $(this).activeClass('active').siblings.removeClass('active');
 });
+
 
 
 // ----- REVIEW ----- //
@@ -133,10 +122,26 @@ $('.menu').on( 'click', 'li', function() {
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
 });
 
+
+
+/*----- COUNTER UP -----*/
+$(document).ready(function(){
+  $(".counter").counterUp({
+      delay: 10,
+      time: 1200
+  });
+});
+
+
+let goal = document.querySelector('.goal');
+menu.onclick = () =>{
+	goal.classList.toggle('active');
+ }
+
+ window.onscroll = () =>{
+ 	goal.classList.remove('active');
+ }
