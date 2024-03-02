@@ -5,9 +5,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- PAGE TITLE -->
       <title>IT-INSTITUTE</title>
+      <!-----  VENDORS CSS ----->
       <link rel="stylesheet" href="css/vendors/tailwind.css">
       <link rel="stylesheet" href="css/vendors/bootstrap.css">
-      <link rel="stylesheet" href="css/vendors/">
       <!----- MAIN CSS ----->
       <link rel="stylesheet" href="css/style.css">
       <!----- RESPONSIVE CSS ----->
@@ -70,8 +70,23 @@
          </div>
       </header>
 
+      <!----- About Header Section -->
+      <div class="about-header bg-[#F4F6F6] relative">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="about-head  flex justify-center items-center h-[50vh] text-lg">
+                     <a href="index.html" class="text-[#5e2ced] font-bold">Home</a><span class="text-[#5e2ced] font-bold ml-4 mr-4">//</span><a href="about.html" class="text-[#000]">About</a>
+                  </div>
+                  <div class="sub-about-1 absolute top-0 left-0 bg-[#E8EDFF] w-[200px] h-[200px] rounded-full"></div>
+                  <div class="sub-about-2 absolute bottom-0 right-0 bg-[#E8EDFF] w-[200px] h-[200px] rounded-full"></div>
+               </div>
+            </div>
+         </div>
+      </div>
 
-      <section>
+      <!----- About Us Section ----->
+      <section class="mt-[100px]">
          <div class="container">
             <div class="row">
                <div class="col-lg-4">
@@ -82,6 +97,9 @@
                <div class="col-lg-8">
                   <h1 class="text-[#5e2ced] font-bold">About Us</h1>
                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto perferendis, quam dolorem blanditiis expedita doloremque! Temporibus, corporis aperiam dolore commodi, quia doloremque rerum repudiandae modi, vitae voluptates laborum? Modi aspernatur, nesciunt ipsam perspiciatis quos iusto temporibus repellendus rem ullam eaque nam voluptates voluptas. Veniam laboriosam repellat illum necessitatibus recusandae maxime ipsum dolorum repellendus neque beatae tempora modi alias quae, nemo perferendis est facere eum placeat tenetur architecto cupiditate obcaecati sequi quisquam! At minus dicta dolores ducimus maiores. Quibusdam sequi perferendis nisi temporibus vitae, hic recusandae, quasi ad nobis natus ullam aliquam pariatur eius adipisci cum nihil. Blanditiis tenetur deserunt ratione!</p>
+                  <button class="relative flex h-[50px] w-60 items-center justify-center overflow-hidden bg-[#5e2ced] text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#fff] before:duration-500 before:ease-out hover:shadow-[#fff] hover:before:h-56 hover:before:w-60 hover:border hover:border-solid hover:border-[#5e2ced]">
+                     <span class="relative z-10 hover:text-[#5e2ced]">Circle hover</span>
+                   </button>
                </div>
             </div>
          </div>
@@ -94,7 +112,7 @@
          <div class="container">
             <div class="row align-items-center">
                <div class="col-lg-3 col-md-12">
-                  <div class="mission_menu">
+                  <div class="mission_menu bg-[#E8EDFF]">
                      <ul class="nav nav-tabs " id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                            <button class="nav-link active" id="tab-1"
@@ -201,7 +219,7 @@
                            aria-labelledby="tab-4">
                            <div class="row">
                               <div class="col-lg-8 col-sm-12">
-                                 <h3>Culture</h3>
+                                 <h3>Our Culture</h3>
                                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni quisquam soluta eius, dolores vitae veniam autem laboriosam itaque voluptate rerum quaerat aut? Debitis doloremque qui eveniet suscipit voluptas blanditiis voluptate eius, iusto nostrum similique doloribus sit quasi rerum dolor placeat accusamus possimus et. Eum, eius ratione culpa aspernatur maiores voluptatum.
                                  </p>
                               </div>
@@ -239,6 +257,49 @@
       </section>
 
 
+      <!----- Free Seminer Section ----->
+      <section>
+         <div class="seminer">
+            <div class="container">
+               <div class="row seminer-wrapper">
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="seminer-animation"><span class="dot"></span></div>
+                  <div class="col-12">
+                     <div class="free-seminer w-full h-[50vh] p-5">
+                        <div class="seminer-heading">
+                           <h2 class="text-center text-[#fff] font-semibold">Join Our Free Seminer</h2>
+                        </div>
+                        <div class="seminer-body flex justify-center items-center p-10">
+                           <form class="w-full">
+                              <input type="text" placeholder="Enter Your Name Here........" class="w-[250px] h-[50px] p-3 rounded-lg mr-3">
+                              <input type="email" placeholder="Enter Your Email Here........" class="w-[250px] h-[50px] p-3 rounded-lg mr-3">
+                              <input type="password" placeholder="Enter Your Password Here........" class="w-[250px] h-[50px] p-3 rounded-lg mr-3">
+                              <button class="relative h-[50px] w-[200px] inline-flex justify-center items-center overflow-hidden bg-[#5e2ced] text-white transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#fff] before:duration-500 before:ease-out hover:shadow-[#fff] hover:before:h-56 hover:before:w-60 hover:border hover:border-solid hover:border-[#5e2ced]">
+                                 <span class="relative z-10 hover:text-[#5e2ced]">Circle hover</span>
+                              </button>   
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
       <!----- FOOTER ----->
       <section style="margin-bottom: 0!important;">
          <footer class="new_footer_area bg_color">
@@ -251,7 +312,9 @@
                                  <p>Don’t miss any updates of our new templates and extensions.!</p>
                                  <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
                                      <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
-                                     <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                     <button class="relative flex h-[50px] w-full items-center justify-center overflow-hidden bg-[#5e2ced] text-white transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#fff] before:duration-500 before:ease-out hover:shadow-[#fff] hover:before:h-56 hover:before:w-80 hover:border hover:border-solid hover:border-[#5e2ced]">
+                                       <span class="relative z-10 hover:text-[#5e2ced]">Circle hover</span>
+                                    </button> 
                                      <p class="mchimp-errmessage" style="display: none;"></p>
                                      <p class="mchimp-sucmessage" style="display: none;"></p>
                                  </form>
@@ -317,6 +380,7 @@
       
       <!----- MAIN JS ----->
       <script src="js/script.js"></script>
+      <!----- VENDORS JS ----->
       <script src="js/vendors/bootstrap.min.js"></script>
       <script src="js/vendors/bootstrap.bundle.min.js"></script>
    </body>
