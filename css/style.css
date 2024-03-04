@@ -771,13 +771,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
   /*----- Free Seminer Section -----*/
-  .seminer-wrapper {
+  .bg-wrapper {
     height: 100%;
     width: 101.9%;
     background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #5e2ced );
     position: relative;
   }
-  .seminer-wrapper .seminer-animation {
+  .bg-wrapper .bg-animation {
     height: 60px;
     width: 60px;
     border: 2px solid rgba(255, 255, 255, 0.7);
@@ -787,7 +787,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 10%;
     animation: 4s linear infinite;
   }
-  .seminer-animation .dot {
+  .bg-animation .dot {
     height: 10px;
     width: 10px;
     border-radius: 50px;
@@ -796,77 +796,77 @@ h1, h2, h3, h4, h5, h6 {
     top: 20%;
     right: 20%;
   }
-  .seminer-wrapper .seminer-animation:nth-child(1) {
+  .bg-wrapper .bg-animation:nth-child(1) {
     top: 20%;
     left: 20%;
     animation: animate 8s linear infinite;
   }
-  .seminer-wrapper .seminer-animation:nth-child(2) {
+  .bg-wrapper .bg-animation:nth-child(2) {
     top: 60%;
     left: 80%;
     animation: animate 10s linear infinite;
   }
-  .seminer-wrapper .seminer-animation:nth-child(3) {
+  .bg-wrapper .bg-animation:nth-child(3) {
     top: 40%;
     left: 40%;
     animation: animate 3s linear infinite;
   }
-  .seminer-wrapper .seminer-animation:nth-child(4) {
+  .bg-wrapper .bg-animation:nth-child(4) {
     top: 66%;
     left: 30%;
     animation: animate 7s linear infinite;
   }
-  .seminer-wrapper .seminer-animation:nth-child(5) {
+  .bg-wrapper .bg-animation:nth-child(5) {
     top: 90%;
     left: 10%;
     animation: animate 9s linear infinite;
   }
-  .seminer-wrapper .seminer-animation:nth-child(6) {
+  .bg-wrapper .bg-animation:nth-child(6) {
     top: 30%;
     left: 60%;
     animation: animate 5s linear infinite;
   }
-  .seminer-wrapper .seminer-animation:nth-child(7) {
+  .bg-wrapper .bg-animation:nth-child(7) {
     top: 70%;
     left: 20%;
     animation: animate 8s linear infinite;
   }
-  .seminer-wrapper .seminer-animation:nth-child(8) {
+  .bg-wrapper .bg-animation:nth-child(8) {
     top: 75%;
     left: 60%;
     animation: animate 10s linear infinite;
   }
-  .seminer-wrapper .seminer-animation:nth-child(9) {
+  .bg-wrapper .bg-animation:nth-child(9) {
     top: 50%;
     left: 50%;
     animation: animate 6s linear infinite;
   }
-  .seminer-wrapper .seminer-animation:nth-child(10) {
+  .bg-wrapper .bg-animation:nth-child(10) {
     top: 45%;
     left: 20%;
     animation: animate 10s linear infinite;
   }
-  .seminer-wrapper .seminer-animation:nth-child(11) {
+  .bg-wrapper .bg-animation:nth-child(11) {
     top: 10%;
     left: 90%;
     animation: animate 9s linear infinite;
   }
-  .seminer-wrapper .seminer-animation:nth-child(12) {
+  .bg-wrapper .bg-animation:nth-child(12) {
     top: 20%;
     left: 70%;
     animation: animate 7s linear infinite;
   }
-  .seminer-wrapper .seminer-animation:nth-child(13) {
+  .bg-wrapper .bg-animation:nth-child(13) {
     top: 20%;
     left: 20%;
     animation: animate 8s linear infinite;
   }
-  .seminer-wrapper .seminer-animation:nth-child(14) {
+  .bg-wrapper .bg-animation:nth-child(14) {
     top: 60%;
     left: 5%;
     animation: animate 6s linear infinite;
   }
-  .seminer-wrapper .seminer-animation:nth-child(15) {
+  .bg-wrapper .bg-animation:nth-child(15) {
     top: 90%;
     left: 80%;
     animation: animate 9s linear infinite;
