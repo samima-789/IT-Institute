@@ -22,6 +22,32 @@ a{
 }
 
 
+/*----- Title Bar -----*/
+.title-bar::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2.7px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #5e2ced;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: title-bg-left;
+}
+
+@keyframes title-bg-left{
+  0%{
+    transform: translateX(0) scale(1);
+  }
+  100%{
+    transform: translateX(88px) scale(2);
+  }
+
+}
+
 
 /*----- Header -----*/
 .header-container{
@@ -292,12 +318,13 @@ button{
 }
 .custom-row a:hover{
     background: linear-gradient(135deg, rgba(222, 212, 251) 0%,rgba(94, 44, 237) 100%);
+    color: #fff !important;
 }
 
 /*----- COUNTER UP -----*/
 .counter-up{
 background: url(../image/counterup.jpg) no-repeat;
-min-height: 50vh;
+min-height: 300px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -370,7 +397,7 @@ font-size: 20px;
 
 /*----- OUR REVIEW -----*/
 .site{
-    height: 100vh;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -468,7 +495,7 @@ font-size: 20px;
     text-align: right;
 }
 .testi :is(.swiper-button-next, .swiper-button-prev){
-    color: #5D54A4;
+    color: #5e2ced;
     top: 40%;
     width: 10px;
     height: 10px;
