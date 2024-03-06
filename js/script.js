@@ -136,8 +136,8 @@ $(document).ready(function(){
   });
 });
 
-
-let goal = document.querySelector('.goal');
+ /*--================ ABOUT PAGE ====================---*/
+ let goal = document.querySelector('.goal');
 menu.onclick = () =>{
 	goal.classList.toggle('active');
  }
@@ -145,3 +145,21 @@ menu.onclick = () =>{
  window.onscroll = () =>{
  	goal.classList.remove('active');
  }
+
+ /*--================ FAQ PAGE ====================--*/
+ //--------- faq SECTION ---------//
+ $('#faq1').click(function(){
+  $('#faq-ansr1').slideToggle('slow');
+});
+$('#faq2').click(function(){
+  $('#faq-ansr2').slideToggle('slow');
+});
+$('#faq3').click(function(){
+  $('#faq-ansr3').slideToggle('slow');
+});
+$('#faq4').click(function(){
+  $('#faq-ansr4').slideToggle('slow');
+});
+$('#faq5').click(function(){
+  $('#faq-ansr5').slideToggle('slow');
+});

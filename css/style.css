@@ -50,12 +50,8 @@ a{
 
 
 /*----- Header -----*/
-.header-container{
-    height: 100vh;
-    width: 100%;  
-}
 .header{
-    height: 12vh;
+    height: 80px;
     width: 100%;
     background-color: #5e2ced;
     display: flex;
@@ -69,32 +65,55 @@ header ul{
     align-items: center;
     gap: 40px;
 }
+header ul li{
+  position: relative;
+}
 header ul li a{
     color: #fff ;
     cursor: pointer;
+    padding: 4px;
     transition: all .5s;
+}
+header ul li a:hover{
+  color: #5e2ced;
+  background-color: #E8EDFF;
+  padding: 4px;
+  border-radius: 10px;
+}
+header ul li .dropdown{
+  width: 150px;
+  height: auto;
+  background: #5e2ced;
+  position: absolute;
+  top: 27px;
+  left: 30px;
+  z-index: 999;
+  display: none;
+  border-radius: 5px;
 }
 
 header ul li .dropdown li{
+  width: 100%;
   display: block;
-}
-
-header ul li .dropdown{
-  width: 200px;
-  height: 300px;
-  background: #fff;
-  position: absolute;
-  top: 55px;
-  z-index: 999;
-  display: none;
+  padding: 10px;
+  border-bottom: 1px solid #E8EDFF;
 }
 header ul li .dropdown a{
+  color: #fff;
+}
+header ul li .dropdown a:hover{
   color: #5e2ced;
-  padding: 20px;
+}
+header ul li .dropdown li:hover{
+  background-color: #fff;
 }
 header ul li:hover ul.dropdown{
   display: block;
 }
+
+
+
+
 .icons{
     display: flex;
     gap: 20px;
@@ -522,6 +541,9 @@ font-size: 20px;
     font-weight: 800;
     color: grey;
 }
+
+/*----- Different Thinks -----*/
+
 
 /*----- FOOTER -----*/
 .new_footer_area {
