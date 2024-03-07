@@ -950,4 +950,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
   /*--===================================== Service Page Start ===========================================*/
-  
+  .rotate{
+    transition: 0.6s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }

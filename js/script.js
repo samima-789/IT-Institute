@@ -148,18 +148,23 @@ menu.onclick = () =>{
 
  /*--================ FAQ PAGE ====================--*/
  //--------- faq SECTION ---------//
- $('#faq1').click(function(){
-  $('#faq-ansr1').slideToggle('slow');
-});
-$('#faq2').click(function(){
-  $('#faq-ansr2').slideToggle('slow');
-});
-$('#faq3').click(function(){
-  $('#faq-ansr3').slideToggle('slow');
-});
-$('#faq4').click(function(){
-  $('#faq-ansr4').slideToggle('slow');
-});
-$('#faq5').click(function(){
-  $('#faq-ansr5').slideToggle('slow');
-});
+$(document).ready(function(){
+  $('.faq-ansr').hide();
+  $('#faq1').click(function(){
+    $('#faq-ansr1').slideToggle('slow');
+    $('#faq-up').slideToggle('rotate')
+  });
+  $('#faq2').click(function(){
+    $('#faq-ansr2').slideToggle('slow');
+  });
+  $('#faq3').click(function(){
+    $('#faq-ansr3').slideToggle('slow');
+  });
+  $('#faq4').click(function(){
+    $('#faq-ansr4').slideToggle('slow');
+  });
+  $('#faq5').click(function(){
+    $('#faq-ansr5').slideToggle('slow');
+  });
+})
+
