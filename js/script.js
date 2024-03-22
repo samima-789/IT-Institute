@@ -1,32 +1,57 @@
+// ----- SCROLL TO TOP ----- //
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('#scrollTopBtn').fadeIn();
+    } else {
+      $('#scrollTopBtn').fadeOut();
+    }
+  });
+
+  $('#scrollTopBtn').click(function(){
+    $('html, body').animate({scrollTop : 0},500);
+    return false;
+  });
+});
+
 // ----- HEADER ----- //
 let btnsearch = document.querySelector("#search")
-//let btnsearch2 = document.querySelector("search1")
+let btnsearch1 = document.querySelector("#search1")
 let searchbar = document.querySelector(".search-bar")
 let close = document.querySelector("#close")
+
 
 
 btnsearch.addEventListener("click",function(){
     searchbar.classList.toggle("show_searchbar")
 })
-// btnsearch2.addEventListener("click",function(){
-//   searchbar.classList.toggle("show_searchbar")
-// })
+btnsearch1.addEventListener("click",function(){
+  searchbar.classList.toggle("show_searchbar")
+})
 close.addEventListener("click",function(){
     searchbar.classList.toggle("show_searchbar")
 })
+
+
 let btn_form =document.querySelector("#btn_form")
-//let btn_form2 =document.querySelector("#btn_form2")
+let btn_form2 =document.querySelector("#btn_form2")
 let form =document.querySelector(".form")
 let close_form =document.querySelector("#close_form")
+
 btn_form.addEventListener("click",function(){
     form.classList.toggle("show_form")
 })
-// btn_form2.addEventListener("click",function(){
-//   form.classList.toggle("show_form")
-// })
+
+btn_form2.addEventListener("click",function(){
+  form.classList.toggle("show_form")
+})
+
+
 close_form.addEventListener("click",function(){
     form.classList.toggle("show_form")
 })
+
+
 let menu = document.querySelector("ul")
 let bars = document.querySelector(".fa-bars-staggered")
 bars.addEventListener("click",function(){
@@ -152,7 +177,6 @@ $(document).ready(function(){
   $('.faq-ansr').hide();
   $('#faq1').click(function(){
     $('#faq-ansr1').slideToggle('slow');
-    $('#faq-up').slideToggle('rotate')
   });
   $('#faq2').click(function(){
     $('#faq-ansr2').slideToggle('slow');
@@ -167,4 +191,8 @@ $(document).ready(function(){
     $('#faq-ansr5').slideToggle('slow');
   });
 })
+
+
+
+
 

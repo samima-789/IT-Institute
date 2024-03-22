@@ -5,92 +5,102 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!----- PAGE TITLE ----->
         <title>It-institute</title> 
-        <!----- VENDORS CSS ----->
+
+        <!---------- VENDORS CSS ---------->
+        <!-- REMIX ICONE CSS -->
         <link rel="stylesheet" href="css/vendors/remix-icon.min.css">
+        <!-- SLICK SLIDER CSS -->
         <link rel="stylesheet" href="css/vendors/slick.css">
+        <!-- SWIPER CSS -->
         <link rel="stylesheet" href="css/vendors/swiper-bundle.min.css">
+        <!-- TAILWIND CSS-->
         <link rel="stylesheet" href="css/vendors/tailwind.css">
+        <!-- BOOTSTRAP CSS-->
         <link rel="stylesheet" href="css/vendors/bootstrap.css">
+        <!-- JQUERY CSS -->
         <link rel="stylesheet" href="css/vendors/jquery-ui.min.js">
-        <!-- VENDORS JS -->
-        <script src="js/vendors/jquery.min.js"></script>
-        <script src="js/vendors/jquery.waypoints.min.js"></script>
-        <script src="js/vendors/jquery.counterup.min.js"></script>
-        <script src="js/vendors/isotop.pkgd.min.js"></script>
-        <script src="js/vendors/isotop.min.js"></script>
+        
         <!----- MAIN CSS ----->
         <link rel="stylesheet" href="css/style.css">
         <!----- RESPONSIVE CSS ----->
         <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
+        <!-- SCROLL TO TOP -->
+        <button id="scrollTopBtn" class="fixed bottom-[40px] right-[40px] w-16 h-16 rounded-full bg-white border-[1px] border-solid border-[#5e2ced] z-40 hidden"><i class="fa-thin fa-arrow-up text-[#5e2ced] text-[30px]"></i></button>
+        
+        
         <!----- HEADER ----->
-        <header>
-                <div class="header">
-                    <div class="logo">
-                        <h2 class="text-white">LOGO</h2>
-                    </div>
-                    <div class="live bg-white p-1 rounded-lg w-28 text-center">
-                        <a href="#" class="text-[#5e2ced]">Live Class <i class="fa-solid fa-circle-dot text-red-600"></i></a>
-                    </div>
-                    <div class="apply bg-[#28a745] p-1 rounded-lg w-28 text-center">
-                        <a href="#" class="text-white">Apply Now</a>
-                    </div>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="#">Pages <i class="fa-solid fa-caret-down"></i></a>
-                            <ul class="dropdown">
-                                <li><a href="#">Members</a></li>
-                                <li><a href="#">Courses</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                            </ul>
+        
                         
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#" class="icons">
-                            <i class="fa-solid fa-magnifying-glass" id="search"></i>
-                            <i class="fa-regular fa-user" id="btn_form"></i>
-                        </a></li>
-                    </ul>
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <h2 class="text-white">LOGO</h2>
+                </div>
+                <div class="live bg-white p-1 rounded-lg w-28 text-center">
+                    <a href="#" class="text-[#5e2ced]">Live Class <i class="fa-solid fa-circle-dot text-red-600"></i></a>
+                </div>
+                <div class="apply bg-[#28a745] p-1 rounded-lg w-28 text-center">
+                    <a href="#" class="text-white">Apply Now</a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#">Pages <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Members</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
 
-                    <div class="sicons">
-                        <a href="#" id="search1"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <a href="#" id="btn_form2"><i class="fa-regular fa-user"></i></a>
-                        <a href="#"><i class="fa-solid fa-bars-staggered"></i></a>
+
+                    <li><a href="#" class="icons">
+                        <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                        <i class="fa-regular fa-user" id="btn_form"></i>
+                    </a></li>
+                </ul>
+
+                <div class="sicons">
+                    <a href="#" id="search1"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" id="btn_form2"><i class="fa-regular fa-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-bars-staggered"></i></a>
+                </div>
+            </div>
+
+            <div class="home">
+                <div class="search-bar show_searchbar">
+                    <div>
+                        <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                        <input type="text" placeholder="Search Here">
                     </div>
                 </div>
-
-                <div class="home">
-                    <div class="search-bar">
-                        <div>
-                            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
-                            <input type="text" placeholder="Search Here">
+                <div class="form">
+                    <div class="form_container">
+                        <div class="form_main">
+                            <a><i class="fa-solid fa-xmark" id="close_form"></i></a>
+                        <h1>Log In</h1>
+                        <div class="email">
+                            <label for="">Email</label>
+                            <input type="email" placeholder="Enter Your Email">
                         </div>
-                    </div>
-                    <div class="form">
-                        <div class="form_container">
-                            <div class="form_main">
-                                <a><i class="fa-solid fa-xmark" id="close_form"></i></a>
-                            <h1>Log In</h1>
-                            <div class="email">
-                                <label for="">Email</label>
-                                <input type="email" placeholder="Enter Your Email">
-                            </div>
-                            <div class="password">
-                                <label for="">Password</label>
-                                <input type="password" placeholder="Enter Your Password">
-                            </div>
-                            <a href="#">Forget Password</a>
-                            <p>Don't Have an Account? <a href="#">Sign In</a></p>
-                            <button>Log In</button>
-                            </div>
+                        <div class="password">
+                            <label for="">Password</label>
+                            <input type="password" placeholder="Enter Your Password">
+                        </div>
+                        <a href="#">Forget Password</a>
+                        <p>Don't Have an Account? <a href="#">Sign In</a></p>
+                        <button>Log In</button>
                         </div>
                     </div>
                 </div>
-        </header>
+            </div>
+    </header>
+
 
 
         <!----- HERO ----->
@@ -98,7 +108,8 @@
             <div class="wrapper swiper-wrapper">
                 <div class="slide swiper-slide">
                     <img src="image/slider-img-1.jpg"
-                        class="h-full w-full object-cover">
+                    class="h-full w-full object-cover">
+
                     <div class="absolute top-20 left-11 w-full z-[100]">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 image-content">
@@ -113,12 +124,9 @@
                                     assumenda rerum corrupti magni, similique
                                     nisi molestias hic error itaque voluptatibus
                                     nihil porro ab.</p>
-                                <button
-                                    class="h-10 w-1/4 bg-[#5e2ced] text-white rounded-lg border-none mt-4 duration-500 hover:bg-white">Learn
-                                    More</button>
-                                <button
-                                    class="h-10 w-1/4 bg-[#5e2ced] text-white rounded-lg border-none mt-4 ml-3 duration-500 hover:bg-white ">Browse
-                                    Course</button>
+                                    <button class="relative flex h-[50px] w-60 items-center justify-center overflow-hidden bg-[#5e2ced] text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#fff] before:duration-500 before:ease-out hover:shadow-[#fff] hover:before:h-56 hover:before:w-60 hover:border hover:border-solid hover:border-[#5e2ced]">
+                                    <span class="relative z-10 hover:text-[#5e2ced]">Circle hover</span>
+                                    </button>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <img src="image/hero-pic1.png" class="w-[60%] animate-pulse">
@@ -129,7 +137,8 @@
 
                 <div class="slide swiper-slide">
                     <img src="image/slider-img-2.jpg"
-                        class="h-full w-full object-cover">
+                    class="h-full w-full object-cover">
+
                     <div class="absolute top-20 left-11 w-full z-[100]">
                         <div class="row">
                             <div class="col-lg-5 col-md-6 col-sm-12">
@@ -149,12 +158,9 @@
                                     assumenda rerum corrupti magni, similique
                                     nisi molestias hic error itaque voluptatibus
                                     nihil porro ab.</p>
-                                <button
-                                    class="h-10 w-1/4 bg-[#5e2ced] text-white rounded-lg border-none mt-4 duration-500 hover:bg-white">Learn
-                                    More</button>
-                                <button
-                                    class="h-10 w-1/4 bg-[#5e2ced] text-white rounded-lg border-none mt-4 ml-3 duration-500 hover:bg-white">Join
-                                    Free Seminer</button>
+                                    <button class="relative flex h-[50px] w-60 items-center justify-center overflow-hidden bg-[#5e2ced] text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#fff] before:duration-500 before:ease-out hover:shadow-[#fff] hover:before:h-56 hover:before:w-60 hover:border hover:border-solid hover:border-[#5e2ced]">
+                                    <span class="relative z-10 hover:text-[#5e2ced]">Circle hover</span>
+                                    </button>
                             </div>
                         </div>
                     </div>
@@ -162,7 +168,8 @@
 
                 <div class="slide swiper-slide">
                     <img src="image/slider-img-3.jpg"
-                        class="h-full w-full object-cover">
+                    class="h-full w-full object-cover">
+
                     <div class="absolute top-20 left-11 w-full z-[100]">
                         <div class="row">
                             <div
@@ -177,12 +184,9 @@
                                     assumenda rerum corrupti magni, similique
                                     nisi molestias hic error itaque voluptatibus
                                     nihil porro ab.</p>
-                                <button
-                                    class="h-10 w-1/4 bg-[#5e2ced] text-white rounded-lg border-none mt-4 duration-500 hover:bg-white">Learn
-                                    More</button>
-                                <button
-                                    class="h-10 w-1/4 bg-[#5e2ced] text-white rounded-lg border-none mt-4 ml-3 duration-500 hover:bg-white">For
-                                    Appointment</button>
+                                    <button class="relative flex h-[50px] w-60 items-center justify-center overflow-hidden bg-[#5e2ced] text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#fff] before:duration-500 before:ease-out hover:shadow-[#fff] hover:before:h-56 hover:before:w-60 hover:border hover:border-solid hover:border-[#5e2ced]">
+                                    <span class="relative z-10 hover:text-[#5e2ced]">Circle hover</span>
+                                    </button>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <img src="image/hero-pic3.png"
@@ -202,11 +206,12 @@
                 </svg>
                 <span></span>
             </div>
+
+            
         </section>
 
-
         <!----- ADMISSION ----->
-        <section>
+        <section class="flex justify-center items-center ">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -262,6 +267,9 @@
                             amet consectetur adipisicing elit. Sint dolore velit
                             voluptate ad. Quisquam autem corrupti laborum dolor
                             nam repellat?</p>
+                        <button class="relative flex h-[50px] w-60 items-center justify-center overflow-hidden bg-[#5e2ced] text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#fff] before:duration-500 before:ease-out hover:shadow-[#fff] hover:before:h-56 hover:before:w-60 hover:border hover:border-solid hover:border-[#5e2ced]">
+                        <span class="relative z-10 hover:text-[#5e2ced]">Circle hover</span>
+                        </button>    
                     </div>
                 </div>
             </div>
@@ -810,9 +818,6 @@
         </footer>
         </section>
 
-
-        <!----- MAIN JS ----->
-        <script src="js/script.js"></script>
         <!----- VENDORS JS ----->
         <script src="js/vendors/swiper-bundle.min.js"></script>
         <script src="js/vendors/isotop.min.js"></script>
@@ -822,5 +827,12 @@
         <script src="js/vendors/popper.min.js"></script>
         <script src="js/vendors/bootstrap.min.js"></script>
         <script src="js/vendors/jquery.slim.min.js"></script>
+        <script src="js/vendors/jquery.min.js"></script>
+        <script src="js/vendors/jquery-ui.min.js"></script>
+        <script src="/js/vendors/jquery.waypoints.min.js"></script>
+        <script src="/js/vendors/jquery.counterup.min.js"></script>
+        <script src="/js/vendors/isotop.pkgd.min.js"></script>
+        <!----- MAIN JS ----->
+        <script src="js/script.js"></script>
 </body>
 </html>

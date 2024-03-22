@@ -27,7 +27,7 @@
    header ul{
       position: absolute;
       left: 0;
-      top: -100%;
+      top: -140%;
       height: 600px;
       width: 100%;
       z-index: 99;
@@ -49,10 +49,6 @@
 
    header ul li .dropdown a{
     color: #5e2ced;
-   }
-
-   .live>.apply{
-    
    }
 
    .sicons{
@@ -161,6 +157,36 @@
       height: 100px;
     }
     
+    header ul{
+      position: absolute;
+      left: 0;
+      top: -140%;
+      height: 600px;
+      width: 100%;
+      z-index: 99;
+      flex-direction: column;
+      transition: .8s;
+   }
+   header ul li:last-child{
+    display: none;
+   }
+   .show_menu{
+    top: 10%;
+    background-color: #5e2ced;
+   }
+   header ul li .dropdown{
+    background-color: #fff;
+    top: 0;
+    left: 60px;
+   }
+
+   header ul li .dropdown a{
+    color: #5e2ced;
+   }
+
+   .sicons{
+    display: block;
+   }
   }
   
   /* 
@@ -180,5 +206,36 @@
       height: 100px;
     }
     
+
+    header ul{
+      position: absolute;
+      left: 0;
+      top: -140%;
+      height: 600px;
+      width: 100%;
+      z-index: 99;
+      flex-direction: column;
+      transition: .8s;
+   }
+   header ul li:last-child{
+    display: none;
+   }
+   .show_menu{
+    top: 10%;
+    background-color: #5e2ced;
+   }
+   header ul li .dropdown{
+    background-color: #fff;
+    top: 0;
+    left: 60px;
+   }
+
+   header ul li .dropdown a{
+    color: #5e2ced;
+   }
+
+   .sicons{
+    display: block;
+   }
     
   }
