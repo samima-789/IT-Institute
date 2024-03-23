@@ -195,6 +195,15 @@
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
+    .counter-up{
+      padding: 50px 50px 0 50px;
+     }
+
+     .content .box{
+      width: calc(50% - 30px);
+      margin-bottom: 50px;
+     }
+     
     .testi .review-wrapper{
       flex-direction: row;
       padding: 30px 100px;
