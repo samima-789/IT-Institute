@@ -74,10 +74,47 @@
     .form_main{
       width: 380px;
     }
+    .live{
+      width: 80px;
+      padding: 0;
+    }
+
+    .live a{
+      font-size: 10px;
+    }
+
+    .apply{
+      width: 80px;
+      padding: 0;
+      display: block;
+    }
+
+    .apply a{
+      font-size: 10px;
+    }
   }
   @media (max-width:400px){
     .form_main{
       width: 280px;
+    }
+
+    .live{
+      width: 80px;
+      padding: 0;
+    }
+
+    .live a{
+      font-size: 10px;
+    }
+
+    .apply{
+      width: 80px;
+      padding: 0;
+      display: block;
+    }
+
+    .apply a{
+      font-size: 10px;
     }
   }
   

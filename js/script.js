@@ -18,7 +18,7 @@ $(document).ready(function(){
 let btnsearch = document.querySelector("#search")
 let btnsearch1 = document.querySelector("#search1")
 let searchbar = document.querySelector(".search-bar")
-let close = document.querySelector("#close")
+let close_search = document.querySelector("#close")
 
 
 
@@ -28,7 +28,7 @@ btnsearch.addEventListener("click",function(){
 btnsearch1.addEventListener("click",function(){
   searchbar.classList.toggle("show_searchbar")
 })
-close.addEventListener("click",function(){
+close_search.addEventListener("click",function(){
     searchbar.classList.toggle("show_searchbar")
 })
 

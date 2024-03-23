@@ -34,49 +34,50 @@
         
                         
         <header>
-            <div class="header">
+            <div class="header h-[80px] w-full bg-[#5e2ced] flex justify-between items-center px-[8%] py-[3%]">
                 <div class="logo">
                     <h2 class="text-white">LOGO</h2>
                 </div>
+                <span></span>
                 <div class="live bg-white p-1 rounded-lg w-28 text-center">
                     <a href="#" class="text-[#5e2ced]">Live Class <i class="fa-solid fa-circle-dot text-red-600"></i></a>
                 </div>
                 <div class="apply bg-[#28a745] p-1 rounded-lg w-28 text-center">
                     <a href="#" class="text-white">Apply Now</a>
                 </div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="#">Pages <i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="#">Members</a></li>
-                            <li><a href="#">Courses</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="blog.html">Blog</a></li>
+                <ul class="flex justify-center items-center gap-[40px]">
+                    <li class="relative"><a href="index.html" class="text-white cursor-pointer p-[4px] transition-all hover:text-[#5e2ced] hover:bg-white hover:p-[4px] rounded-sm">Home</a></li>
+                    <li class="relative"><a href="about.html" class="text-white cursor-pointer p-[4px] transition-all hover:text-[#5e2ced] hover:bg-white hover:p-[4px] rounded-sm">About</a></li>
+                    <li class="relative"><a href="services.html" class="text-white cursor-pointer p-[4px] transition-all hover:text-[#5e2ced] hover:bg-white hover:p-[4px] rounded-sm">Services</a></li>
+                    <li class="relative hover:block"><a href="#" class="text-white cursor-pointer p-[4px] transition-all hover:text-[#5e2ced] hover:bg-white hover:p-[4px] rounded-sm">Pages <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown w-[150px] h-auto bg-[#5e2ced] absolute top-[27px] left-[30px] z-[999] hidden rounded-sm">
+                            <li class="w-full block p-[10px] border-b-[1px] border-solid border-white hover:bg-white"><a href="#" class="text-white hover:text-[#5e2ced]">Members</a></li>
+                            <li class="w-full block p-[10px] border-b-[1px] border-solid border-white hover:bg-white"><a href="#" class="text-white hover:text-[#5e2ced]">Courses</a></li>
+                            <li class="w-full block p-[10px] border-b-[1px] border-solid border-white hover:bg-white"><a href="faq.html" class="text-white hover:text-[#5e2ced]">FAQ</a></li>
+                            <li class="w-full block p-[10px] border-b-[1px] border-solid border-white hover:bg-white"><a href="blog.html" class="text-white hover:text-[#5e2ced]">Blog</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="relative"><a href="contact.html" class="text-white cursor-pointer p-[4px] transition-all hover:text-[#5e2ed] hover:bg-white hover:p-[4px] rounded-sm">Contact</a></li>
 
 
-                    <li><a href="#" class="icons">
+                    <li class="relative"><a href="#" class="icons flex gap-[20px] text-white cursor-pointer p-[4px] transition-all hover:text-[#5e2ced] hover:bg-white hover:p-[4px] rounded-sm">
                         <i class="fa-solid fa-magnifying-glass" id="search"></i>
                         <i class="fa-regular fa-user" id="btn_form"></i>
                     </a></li>
                 </ul>
 
-                <div class="sicons">
-                    <a href="#" id="search1"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="#" id="btn_form2"><i class="fa-regular fa-user"></i></a>
-                    <a href="#"><i class="fa-solid fa-bars-staggered"></i></a>
+                <div class="sicons hidden">
+                    <a href="#" id="search1" class="text-black leading-10 transition-all hover:text-white"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" id="btn_form2" class="text-black leading-10 transition-all hover:text-white"><i class="fa-regular fa-user"></i></a>
+                    <a href="#" class="text-black leading-10 transition-all hover:text-white"><i class="fa-solid fa-bars-staggered"></i></a>
                 </div>
             </div>
 
-            <div class="home">
-                <div class="search-bar show_searchbar">
-                    <div>
-                        <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
-                        <input type="text" placeholder="Search Here">
+            <div class="home absolute top-0 left-0 w-full m-0 m-auto">
+                <div class="search-bar absolute min-h-[90vh] w-full bg-[rgba(0, 0, 0, 0.05)] backdrop-blur-[10px] flex justify-start items-center flex-col px-0 py-[100px] hidden z-[999]">
+                    <div class="h-[180px] w-[60%] m-0 m-auto bg-[rgba(255, 255, 255, 0.178)] flex justify-center overflow-hidden px-[5%] py-0 flex-col relative">
+                        <a href="#" id="close" class="absolute top-[-2px] right-[-2px] mb-[50px] px-[14px] py-[4px] bg-white text-black rounded-[3px] text-[1.9rem]"><i class="fa-solid fa-xmark"></i></a>
+                        <input type="text" placeholder="Search Here" class="h-[54px] w-full pl-5 outline-none text-[16px] rounded-[5px] text-white bg-[rgba(0, 0, 0, 0.1)] border-1 border-solid border-[rgba(0, 0, 0, 0.674)]" >
                     </div>
                 </div>
                 <div class="form">

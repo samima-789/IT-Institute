@@ -53,7 +53,7 @@ a{
 
 
 /*----- Header -----*/
-.header{
+/* .header{
   height: 80px;
   width: 100%;
   background-color: #5e2ced;
@@ -61,17 +61,19 @@ a{
   justify-content: space-between;
   align-items: center;
   padding: 3% 8%;
-}
+} 
 header ul{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
 }
+
 header ul li{
 position: relative;
-}
-header ul li a{
+}*/
+
+/* header ul li a{
   color: #fff ;
   cursor: pointer;
   padding: 4px;
@@ -133,17 +135,17 @@ header ul li:hover ul.dropdown{
 }
 .sicons a:hover{
   color: #fff;
-}
+} */
 
-.home{
+/* .home{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     margin: 0 auto;
     
-}
-.search-bar{
+} */
+/* .search-bar{
     position: absolute;
     min-height: 90vh;
     width: 100%;
@@ -155,10 +157,10 @@ header ul li:hover ul.dropdown{
     flex-direction: column;
     padding: 100px 0;
     display: none;
-}
+} */
 
-.show_searchbar{
-  display: ;
+/* .show_searchbar{
+  display:; 
 }
 
 .search-bar div{
@@ -172,9 +174,9 @@ header ul li:hover ul.dropdown{
     padding: 0 5%;
     flex-direction: column;
     position: relative;
-}
+} */
 
-.search-bar div a{
+/* .search-bar div a{
     position: absolute;
     top: -2px;
     right: -2px;
@@ -198,7 +200,7 @@ header ul li:hover ul.dropdown{
 }
 .search-bar div input::placeholder{
     color: #fff;
-}
+} */
 
 .form{
     position: absolute;
