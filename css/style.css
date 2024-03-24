@@ -53,158 +53,14 @@ a{
 
 
 /*----- Header -----*/
-/* .header{
-  height: 80px;
-  width: 100%;
-  background-color: #5e2ced;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3% 8%;
-} 
-header ul{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
 
-header ul li{
-position: relative;
-}*/
 
-/* header ul li a{
-  color: #fff ;
-  cursor: pointer;
-  padding: 4px;
-  transition: all .5s;
+.show_searchbar{
+  display: block; 
 }
-
-header ul li a:hover{
-  color: #5e2ced;
-  background-color: #E8EDFF;
-  padding: 4px;
-  border-radius: 10px;
-}
-header ul li .dropdown{
-  width: 150px;
-  height: auto;
-  background: #5e2ced;
-  position: absolute;
-  top: 27px;
-  left: 30px;
-  z-index: 999;
-  display: none;
-  border-radius: 5px;
-}
-
-header ul li .dropdown li{
-  width: 100%;
-  display: block;
-  padding: 10px;
-  border-bottom: 1px solid #E8EDFF;
-}
-header ul li .dropdown a{
-  color: #fff;
-}
-header ul li .dropdown a:hover{
-  color: #5e2ced;
-}
-header ul li .dropdown li:hover{
-  background-color: #fff;
-}
-header ul li:hover ul.dropdown{
-  display: block;
-}
-
-.icons{
-    display: flex;
-    gap: 20px;
-}
-
-.icons a{
-    color: #000;
-}
-.sicons{
-    display: none;
-}
-.sicons a{
-    color: #000;
-    letter-spacing: 10px;
-    transition: all .5s;
-}
-.sicons a:hover{
-  color: #fff;
-} */
-
-/* .home{
+/* .form{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 0 auto;
-    
-} */
-/* .search-bar{
-    position: absolute;
-    min-height: 90vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    padding: 100px 0;
-    display: none;
-} */
-
-/* .show_searchbar{
-  display:; 
-}
-
-.search-bar div{
-    height: 180px;
-    width: 60%;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.178);
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0 5%;
-    flex-direction: column;
-    position: relative;
-} */
-
-/* .search-bar div a{
-    position: absolute;
-    top: -2px;
-    right: -2px;
-    margin-bottom: 50px;
-    padding: 4px 14px;
-    background-color: #fff;
-    color: #000;
-    border-radius: 3px;
-    font-size: 1.9rem;
-}
-.search-bar div input{
-    height: 54px;
-    width: 100%;
-    padding-left: 20px;
-    outline: none;
-    font-size: 16px;
-    border-radius: 5px;
-    color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.674);
-    background-color: rgba(0, 0, 0, 0.1);
-}
-.search-bar div input::placeholder{
-    color: #fff;
-} */
-
-.form{
-    position: absolute;
-    height: 650px;
+    height: 610px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(10px);
@@ -214,11 +70,11 @@ header ul li:hover ul.dropdown{
     flex-direction: column;
     display: none;
     z-index: 99;
-}
+} */
 .show_form{
     display: block;
 }
-.form_container{
+/* .form_container{
     height: 100%;
     width: 100%;
     display: flex;
@@ -226,8 +82,8 @@ header ul li:hover ul.dropdown{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.form_main{
+} */
+/* .form_main{
     height: 450px;
     width: 420px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -242,9 +98,9 @@ header ul li:hover ul.dropdown{
     border: 1px solid rgba(255, 255, 255, 0.5);
     position: relative;
     overflow: hidden;
-}
+} */
 
-#close_form{
+/* #close_form{
     color: #000;
     font-size: 1.9rem;
     position: absolute;
@@ -254,15 +110,15 @@ header ul li:hover ul.dropdown{
     background-color: #fff;
     border-radius: 12px;
     cursor: pointer;
-}
-.email,.password{
+} */
+/* .email,.password{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-}
-.email label{
+} */
+/* .email label{
     margin-top: 20px;
 }
 
@@ -280,7 +136,7 @@ label{
     background-color: rgba(255, 255, 255, 0.107);
     border: 1px solid rgba(255, 255, 255, 0.591);
     color: #fff;
-}
+} */
 .email input::placeholder,.password input::placeholder{
     color: #fff;
 }

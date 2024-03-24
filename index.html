@@ -74,28 +74,29 @@
             </div>
 
             <div class="home absolute top-0 left-0 w-full m-0 m-auto">
-                <div class="search-bar absolute min-h-[90vh] w-full bg-[rgba(0, 0, 0, 0.05)] backdrop-blur-[10px] flex justify-start items-center flex-col px-0 py-[100px] hidden z-[999]">
-                    <div class="h-[180px] w-[60%] m-0 m-auto bg-[rgba(255, 255, 255, 0.178)] flex justify-center overflow-hidden px-[5%] py-0 flex-col relative">
+                <div class="search-bar absolute min-h-[610px] w-full bg-[rgba(0, 0, 0, 0.05)] backdrop-blur-[10px] flex justify-center items-center flex-col px-0 py-[100px] hidden z-[99]">
+                    <div class="h-[180px] w-[60%] m-0 m-auto bg-[rgba(255, 255, 255, 0.178)] flex justify-center overflow-hidden px-[5%] py-0 flex-col relative border-[1px] border-solid border-white">
                         <a href="#" id="close" class="absolute top-[-2px] right-[-2px] mb-[50px] px-[14px] py-[4px] bg-white text-black rounded-[3px] text-[1.9rem]"><i class="fa-solid fa-xmark"></i></a>
-                        <input type="text" placeholder="Search Here" class="h-[54px] w-full pl-5 outline-none text-[16px] rounded-[5px] text-white bg-[rgba(0, 0, 0, 0.1)] border-1 border-solid border-[rgba(0, 0, 0, 0.674)]" >
+                        <input type="text" placeholder="Search Here" class="h-[54px] w-full pl-5 outline-none text-[16px] rounded-[5px] text-black bg-[rgba(0, 0, 0, 0.1)] border-[1px] border-solid border-[rgba(0, 0, 0, 0.674)]" >
+                        <button class="w-10 absolute right-20 top-11 rounded-full"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 </div>
-                <div class="form">
-                    <div class="form_container">
-                        <div class="form_main">
-                            <a><i class="fa-solid fa-xmark" id="close_form"></i></a>
-                        <h1>Log In</h1>
-                        <div class="email">
-                            <label for="">Email</label>
-                            <input type="email" placeholder="Enter Your Email">
+                <div class="form absolute h-[610px] w-full bg-[rgba(0, 0, 0, 0.05)] backdrop-blur-[10px] flex justify-center items-center flex-col hidden z-[99]">
+                    <div class="form_container h-full w-full flex gap-[20px] justify-center items-center flex-col py-20">
+                        <div class="form_main h-[450px] w-[420px] bg-[rgba(0, 0, 0, 0.2)] flex justify-center items-start flex-col rounded-[16px] shadow-[10px 10px 8px rgba(0, 0, 0, 0.8)] backdrop-blur-[30px] p-10 py-64 border-[1px] border-solid border-[rgba(255, 255, 255, 0.5)] relative overflow-hidden">
+                            <a class="mt-[-8px] mb-[15px] text-white"><i class="fa-solid fa-xmark text-black text-[1.9rem] absolute top-[-5px] right-[-6px] px-[18px] py-[15px] bg-white rounded-[12px] cursor-pointer"  id="close_form"></i></a>
+                        <h1 class="text-white text-[2.3rem] mt-[-6%]">Log In</h1>
+                        <div class="email w-full flex justify-center items-start flex-col">
+                            <label for="" class="mt-5 text-white mb-[5px]">Email</label>
+                            <input type="email" placeholder="Enter Your Email" class="h-[45px] w-[350px] rounded-[10px] mb-5 outline-none p-[10px] bg-[gba(255, 255, 255, 0.107)] border-[1px] border-solid border-[gba(255, 255, 255, 0.591)] text-white">
                         </div>
-                        <div class="password">
-                            <label for="">Password</label>
-                            <input type="password" placeholder="Enter Your Password">
+                        <div class="password w-full flex justify-center items-start flex-col">
+                            <label for="" class="text-white mb-[5px]">Password</label>
+                            <input type="password" placeholder="Enter Your Password" class="h-[45px] w-[350px] rounded-[10px] mb-5 outline-none p-[10px] bg-[gba(255, 255, 255, 0.107)] border-[1px] border-solid border-[gba(255, 255, 255, 0.591)] text-white">
                         </div>
-                        <a href="#">Forget Password</a>
-                        <p>Don't Have an Account? <a href="#">Sign In</a></p>
-                        <button>Log In</button>
+                        <a href="#">Forget Password?</a>
+                        <p class="text-[#5e2ced]">Don't Have an Account? <a href="#">Sign In</a></p>
+                        <button class="h-[40px] w-full bg-[#5e2ced] rounded-[20px] border-none text-white mt-[25px] transition-all">Log In</button>
                         </div>
                     </div>
                 </div>
