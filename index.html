@@ -96,7 +96,9 @@
                         </div>
                         <a href="#">Forget Password?</a>
                         <p class="text-[#5e2ced]">Don't Have an Account? <a href="#">Sign In</a></p>
-                        <button class="h-[40px] w-full bg-[#5e2ced] rounded-[20px] border-none text-white mt-[25px] transition-all">Log In</button>
+                        <button class="relative flex h-[50px] w-full p-3 rounded-full items-center justify-center bg-[#5e2ced] text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#fff] before:duration-500 before:ease-out hover:shadow-[#fff] hover:before:h-[50px] hover:before:w-full hover:border hover:border-solid hover:border-[#5e2ced]">
+                        <span class="relative z-10 hover:text-[#5e2ced]">Circle hover</span>
+                        </button>
                         </div>
                     </div>
                 </div>
@@ -106,11 +108,10 @@
 
 
         <!----- HERO ----->
-        <section class="main swiper mySwiper">
+        <section class="main h-[530px] w-full swiper mySwiper">
             <div class="wrapper swiper-wrapper">
-                <div class="slide swiper-slide">
-                    <img src="image/slider-img-1.jpg"
-                    class="h-full w-full object-cover">
+                <div class="slide overflow-hidden w-full h-full before:content-['']  before:absolute before:h-full before:w-full before:bg-[rgba(0, 0, 0, 0.7)] swiper-slide">
+                    <img src="image/slider-img-1.jpg" class="h-full w-full object-cover">
 
                     <div class="absolute top-20 left-11 w-full z-[100]">
                         <div class="row">
@@ -199,7 +200,7 @@
                 </div>
             </div>
 
-            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-next nav-btn before::text-transparent after:text-transparent"></div>
             <div class="swiper-button-prev nav-btn"></div>
             <div class="swiper-pagination"></div>
             <div class="autoplay-progress">
@@ -478,36 +479,36 @@
 
         <!----- COUNTER UP ----->
         <section>
-            <div class="counter-up">
-              <div class="content">
-                <div class="box">
-                  <div class="icon">
+            <div class="counter-up bg-no-repeat min-h-[300px] flex justify-center items-center w-full m-0 m-auto bg-cover bg-fixed relative" style="background-image: url(image/counterup.jpg);">
+              <div class="content relative z-[1] flex-wrap flex w-full h-full m-0 m-auto items-center justify-between ">
+                <div class="box w-[calc(25% - 20px)] rounded-lg p-5 flex items-center justify-evenly flex-col">
+                  <div class="icon bg-[#ccc] w-[60px] h-[60px] flex items-center justify-center rounded-[50px] text-[35px] text-[#6a7695]">
                     <i class="fa-solid fa-face-smile"></i>
                   </div>
-                  <div class="counter">+724</div>
-                  <div class="text">Working Hours</div>
+                  <div class="counter text-[35px] text-[#5e2ced] font-bold font-sans">+724</div>
+                  <div class="text text-[#ccc] font-normal text-[20px]">Working Hours</div>
                 </div>
-                <div class="box">
-                  <div class="icon">
+                <div class="box w-[calc(25% - 20px)] rounded-lg p-5 flex items-center justify-evenly flex-col">
+                  <div class="icon bg-[#ccc] w-[60px] h-[60px] flex items-center justify-center rounded-[50px] text-[35px] text-[#6a7695]">
                     <i class="fa-solid fa-file"></i>
                   </div>
-                  <div class="counter">+508</div>
-                  <div class="text">Completed Projects</div>
+                  <div class="counter text-[35px] text-[#5e2ced] font-bold font-sans">+508</div>
+                  <div class="text text-[#ccc] font-normal text-[20px]">Completed Projects</div>
                 </div>
-                <div class="box">
-                  <div class="icon">
+                <div class="box w-[calc(25% - 20px)] rounded-lg p-5 flex items-center justify-evenly flex-col">
+                  <div class="icon bg-[#ccc] w-[60px] h-[60px] flex items-center justify-center rounded-[50px] text-[35px] text-[#6a7695]">
                     <i class="fa-solid fa-gift"></i>
                   </div>
-                  <div class="counter">+120</div>
-                  <div class="text">Awards Received</div>
+                  <div class="counter text-[35px] text-[#5e2ced] font-bold font-sans">+120</div>
+                  <div class="text text-[#ccc] font-normal text-[20px]">Awards Received</div>
                 </div>
-                <div class="box">
-                  <div class="icon">
+                <div class="box w-[calc(25% - 20px)] rounded-lg p-5 flex items-center justify-evenly flex-col">
+                  <div class="icon bg-[#ccc] w-[60px] h-[60px] flex items-center justify-center rounded-[50px] text-[35px] text-[#6a7695]">
                     <i class="fa-solid fa-user"></i>
                     </i>
                   </div>
-                  <div class="counter">+436</div>
-                  <div class="text">Happy Clients</div>
+                  <div class="counter text-[35px] text-[#5e2ced] font-bold font-sans">+436</div>
+                  <div class="text text-[#ccc] font-normal text-[20px]">Happy Clients</div>
                 </div>
               </div>
             </div>
@@ -602,9 +603,9 @@
 
         <!----- OUR REVIEW ----->
         <section>
-            <div id="page" class="site">
-                <div class="review">
-                    <div class="testi">
+            <div id="page" class="site h-[500px] flex justify-center items-center ">
+                <div class="review max-w-[1100px] w-full p-0 m-0 m-auto">
+                    <div class="testi max-w-[900px] m-0 m-auto">
                         <div class="section_title text-center mb-3">
                             <h2>Our Review</h2>
                             <div class="title-bar h-1 w-24 bg-[#b49afc] m-5 m-auto relative rounded-2xl before:absolute before:left-0 before:top-[-2.7px] before:h-[10px] before:w-[10px] before:rounded-full before:bg-[#5e2ced] before:duration-700 before:ease-linear"></div>
@@ -613,45 +614,45 @@
                         <div class="body swiper" style="margin-top: 50px;">
                             <ul class="swiper-wrapper">
                                 <li class="swiper-slide">
-                                    <div class="review-wrapper">
+                                    <div class="review-wrapper flex flex-col items-center gap-[60px] px-0 py-[30px]">
                                         <div class="thumbnail">
-                                            <img src="image/review-1.jpg">
+                                            <img src="image/review-1.jpg" class="object-cover w-full h-full rounded-[50%]">
                                         </div>
-                                        <div class="aside">
+                                        <div class="aside relative pt-0 flex flex-col self-end w-[700px] m-0 m-auto">
                                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum provident recusandae ipsa a? Itaque, quos quod! Commodi doloribus nemo expedita? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, numquam alias.</p>
-                                            <div class="name">
-                                                <h4>Alliza Alison</h4>
-                                                <p>Content Creator</p>
+                                            <div class="name relative w-fit leading-[1]">
+                                                <h4 class="text-[22px] font-extrabold opacity-[.8] text-[#5e2ced]">Alliza Alison</h4>
+                                                <p class="text-[12px] text-right">Content Creator</p>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
 
                                 <li class="swiper-slide">
-                                    <div class="review-wrapper">
+                                    <div class="review-wrapper flex flex-col items-center gap-[60px] px-0 py-[30px]">
                                         <div class="thumbnail">
-                                            <img src="image/review-2.jpg">
+                                            <img src="image/review-2.jpg" class="object-cover w-full h-full rounded-[50%]">
                                         </div>
-                                        <div class="aside">
+                                        <div class="aside relative pt-0 flex flex-col self-end w-[700px] m-0 m-auto">
                                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum provident recusandae ipsa a? Itaque, quos quod! Commodi doloribus nemo expedita? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, numquam alias.</p>
-                                            <div class="name">
-                                                <h4>Anusha Hazra</h4>
-                                                <p>Web Designer</p>
+                                            <div class="name relative w-fit leading-[1]">
+                                                <h4 class="text-[22px] font-extrabold opacity-[.8] text-[#5e2ced]">Anusha Hazra</h4>
+                                                <p class="text-[12px] text-right">Web Designer</p>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
 
                                 <li class="swiper-slide">
-                                    <div class="review-wrapper">
+                                    <div class="review-wrapper flex flex-col items-center gap-[60px] px-0 py-[30px]">
                                         <div class="thumbnail">
-                                            <img src="image/review-3.jpg">
+                                            <img src="image/review-3.jpg" class="object-cover w-full h-full rounded-[50%]">
                                         </div>
-                                        <div class="aside">
+                                        <div class="aside relative pt-0 flex flex-col self-end w-[700px] m-0 m-auto">
                                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum provident recusandae ipsa a? Itaque, quos quod! Commodi doloribus nemo expedita? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, numquam alias.</p>
-                                            <div class="name">
-                                                <h4>Saarah Malik</h4>
-                                                <p>Graphic Designer</p>
+                                            <div class="name relative w-fit leading-[1]">
+                                                <h4 class="text-[22px] font-extrabold opacity-[.8] text-[#5e2ced]">Saarah Malik</h4>
+                                                <p class="text-[12px] text-right">Graphic Designer</p>
                                             </div>
                                         </div>
                                     </div>
@@ -745,17 +746,19 @@
 
         <!----- FOOTER ----->
         <section style="margin-bottom: 0!important;">
-        <footer class="new_footer_area bg_color">
-            <div class="new_footer_top">
+        <footer class="new_footer_area bg_color bg-[#fbfbfb]">
+            <div class="new_footer_top pt-[100px] pl-0 pr-0 pb-[100px] relative overflow-x-hidden">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                                 <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                                <p>Don’t miss any updates of our new templates and extensions.!</p>
+                                <p class="text-[16px] font-light leading-[28px] text-[#6a7695] mb-5">Don’t miss any updates of our new templates and extensions.!</p>
                                 <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
                                     <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
-                                    <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                    <button class="relative mt-5 flex h-[50px] w-full p-3 rounded-full items-center justify-center bg-[#5e2ced] text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#fff] before:duration-500 before:ease-out hover:shadow-[#fff] hover:before:h-[50px] hover:before:w-full hover:border hover:border-solid hover:border-[#5e2ced]">
+                                        <span class="relative z-10 hover:text-[#5e2ced]">Circle hover</span>
+                                        </button>
                                     <p class="mchimp-errmessage" style="display: none;"></p>
                                     <p class="mchimp-sucmessage" style="display: none;"></p>
                                 </form>
@@ -805,7 +808,7 @@
                     <div class="footer_bg_two"></div>
                 </div>
             </div>
-            <div class="footer_bottom">
+            <div class="footer_bottom text-[14px] font-light leading-5 text-[#7f88a6] px-0 py-[27px]">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-sm-7">
