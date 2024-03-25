@@ -105,6 +105,7 @@ $(document).ready(function(){
 
 
 // ----- GALLERY ISOTOP ----- //
+$(document).ready(function(){
 var $grid = $('.items').isotope({   
 });
 $('.menu').on( 'click', 'li', function() {
@@ -113,6 +114,7 @@ $('.menu').on( 'click', 'li', function() {
 });
 $('.menu').on( 'click', 'li', function() {
   $(this).activeClass('active').siblings.removeClass('active');
+});
 });
 
 

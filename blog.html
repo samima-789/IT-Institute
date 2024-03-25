@@ -17,74 +17,94 @@
    <body>
       <!----- HEADER ----->
       <header>
-         <div class="header">
+        <div class="header h-[80px] w-full bg-[#5e2ced] flex justify-between items-center px-[8%] py-[3%]">
             <div class="logo">
-               <h2 class="text-white">LOGO</h2>
+                <h2 class="text-white">LOGO</h2>
             </div>
-            <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="services.html">Services</a></li>
-               <li><a href="blog.html">Blog</a></li>
-               <li><a href="contact.html">Contact</a></li>
-               <li><a href="#" class="icons">
-                     <i class="fa-solid fa-magnifying-glass" id="search"></i>
-                     <i class="fa-regular fa-user" id="btn_form"></i>
-                  </a></li>
+            <span></span>
+            <div class="live bg-white p-1 rounded-lg w-28 text-center">
+                <a href="#" class="text-[#5e2ced]">Live Class <i class="fa-solid fa-circle-dot text-red-600"></i></a>
+            </div>
+            <div class="apply bg-[#28a745] p-1 rounded-lg w-28 text-center">
+                <a href="#" class="text-white">Apply Now</a>
+            </div>
+            <ul class="flex justify-center items-center gap-[40px]">
+                <li class="relative"><a href="index.html" class="text-white cursor-pointer p-[4px] transition-all hover:text-[#5e2ced] hover:bg-white hover:p-[4px] rounded-sm">Home</a></li>
+                <li class="relative"><a href="about.html" class="text-white cursor-pointer p-[4px] transition-all hover:text-[#5e2ced] hover:bg-white hover:p-[4px] rounded-sm">About</a></li>
+                <li class="relative"><a href="services.html" class="text-white cursor-pointer p-[4px] transition-all hover:text-[#5e2ced] hover:bg-white hover:p-[4px] rounded-sm">Services</a></li>
+                <li class="relative hover:block"><a href="#" class="text-white cursor-pointer p-[4px] transition-all hover:text-[#5e2ced] hover:bg-white hover:p-[4px] rounded-sm">Pages <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown w-[150px] h-auto bg-[#5e2ced] absolute top-[27px] left-[30px] z-[999] hidden rounded-sm">
+                        <li class="w-full block p-[10px] border-b-[1px] border-solid border-white hover:bg-white"><a href="#" class="text-white hover:text-[#5e2ced]">Members</a></li>
+                        <li class="w-full block p-[10px] border-b-[1px] border-solid border-white hover:bg-white"><a href="#" class="text-white hover:text-[#5e2ced]">Courses</a></li>
+                        <li class="w-full block p-[10px] border-b-[1px] border-solid border-white hover:bg-white"><a href="faq.html" class="text-white hover:text-[#5e2ced]">FAQ</a></li>
+                        <li class="w-full block p-[10px] border-b-[1px] border-solid border-white hover:bg-white"><a href="blog.html" class="text-white hover:text-[#5e2ced]">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="relative"><a href="contact.html" class="text-white cursor-pointer p-[4px] transition-all hover:text-[#5e2ed] hover:bg-white hover:p-[4px] rounded-sm">Contact</a></li>
+
+
+                <li class="relative"><a href="#" class="icons flex gap-[20px] text-white cursor-pointer p-[4px] transition-all hover:text-[#5e2ced] hover:bg-white hover:p-[4px] rounded-sm">
+                    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                    <i class="fa-regular fa-user" id="btn_form"></i>
+                </a></li>
             </ul>
 
-            <div class="sicons">
-               <a href="#" id="search1"><i
-                     class="fa-solid fa-magnifying-glass"></i></a>
-               <a href="#" id="btn_form2"><i class="fa-regular fa-user"></i></a>
-               <a href="#"><i class="fa-solid fa-bars-staggered"></i></a>
+            <div class="sicons hidden">
+                <a href="#" id="search1" class="text-black leading-10 transition-all hover:text-white"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" id="btn_form2" class="text-black leading-10 transition-all hover:text-white"><i class="fa-regular fa-user"></i></a>
+                <a href="#" class="text-black leading-10 transition-all hover:text-white"><i class="fa-solid fa-bars-staggered"></i></a>
             </div>
-         </div>
+        </div>
 
-         <div class="home">
-            <div class="search-bar">
-               <div>
-                  <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
-                  <input type="text" placeholder="Search Here">
-               </div>
+        <div class="home absolute top-0 left-0 w-full m-0 m-auto">
+            <div class="search-bar absolute min-h-[610px] w-full bg-[rgba(0, 0, 0, 0.8)] backdrop-blur-[150px] flex justify-center items-center flex-col px-0 py-[100px] hidden z-[99]">
+                <div class="h-[180px] w-[60%] m-0 m-auto bg-[rgba(0, 0, 0, 0.8)] flex justify-center overflow-hidden px-[5%] py-0 flex-col relative border-[1px] border-solid border-white">
+                    <a href="#" id="close" class="absolute top-[-2px] right-[-2px] mb-[50px] px-[14px] py-[4px] bg-white text-black rounded-[3px] text-[1.9rem]"><i class="fa-solid fa-xmark"></i></a>
+                    <input type="text" placeholder="Search Here" class="h-[54px] w-full pl-5 outline-none text-[16px] rounded-[5px] text-black bg-[rgba(0, 0, 0, 0.8)] border-[1px] border-solid border-[rgba(0, 0, 0, 0.8)]" >
+                    <button class="w-10 h-10 absolute right-20 top-[70px] rounded-full bg-[#5e2ced]"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
+                </div>
             </div>
-            <div class="form">
-               <div class="form_container">
-                  <div class="form_main">
-                     <a><i class="fa-solid fa-xmark" id="close_form"></i></a>
-                     <h1>Log In</h1>
-                     <div class="email">
-                        <label for>Email</label>
-                        <input type="email" placeholder="Enter Your Email">
-                     </div>
-                     <div class="password">
-                        <label for>Password</label>
-                        <input type="password"
-                           placeholder="Enter Your Password">
-                     </div>
-                     <a href="#">Forget Password</a>
-                     <p>Don't Have an Account? <a href="#">Sign In</a></p>
-                     <button>Log In</button>
-                  </div>
-               </div>
+            <div class="form absolute h-[610px] w-full bg-[rgba(0, 0, 0, 0.8)] backdrop-blur-[150px] flex justify-center items-center flex-col hidden z-[99]">
+                <div class="form_container h-full w-full flex gap-[20px] justify-center items-center flex-col py-20">
+                    <div class="form_main h-[450px] w-[420px] bg-[rgba(0, 0, 0, 0.8)] flex justify-center items-start flex-col rounded-[16px] shadow-[10px 10px 8px rgba(0, 0, 0, 0.8)] backdrop-blur-[30px] p-10 py-64 border-[1px] border-solid border-[rgba(0, 0, 0, 0.8)] relative overflow-hidden">
+                        <a class="mt-[-8px] mb-[15px] text-white"><i class="fa-solid fa-xmark text-black text-[1.9rem] absolute top-[-5px] right-[-6px] px-[18px] py-[15px] bg-white rounded-[12px] cursor-pointer"  id="close_form"></i></a>
+                    <h1 class="text-white text-[2.3rem] mt-[-6%]">Log In</h1>
+                    <div class="email w-full flex justify-center items-start flex-col">
+                        <label for="" class="mt-5 text-white mb-[5px]">Email</label>
+                        <input type="email" placeholder="Enter Your Email" class="h-[45px] w-[350px] rounded-[10px] mb-5 outline-none p-[10px] bg-[gba(255, 255, 255, 0.107)] border-[1px] border-solid border-[gba(255, 255, 255, 0.591)] text-white">
+                    </div>
+                    <div class="password w-full flex justify-center items-start flex-col">
+                        <label for="" class="text-white mb-[5px]">Password</label>
+                        <input type="password" placeholder="Enter Your Password" class="h-[45px] w-[350px] rounded-[10px] mb-5 outline-none p-[10px] bg-[gba(255, 255, 255, 0.107)] border-[1px] border-solid border-[gba(255, 255, 255, 0.591)] text-white">
+                    </div>
+                    <a href="#">Forget Password?</a>
+                    <p class="text-[#5e2ced]">Don't Have an Account? <a href="#">Sign In</a></p>
+                    <button class="relative flex h-[50px] w-full p-3 rounded-full items-center justify-center bg-[#5e2ced] text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#fff] before:duration-500 before:ease-out hover:shadow-[#fff] hover:before:h-[50px] hover:before:w-full hover:border hover:border-solid hover:border-[#5e2ced]">
+                    <span class="relative z-10 hover:text-[#5e2ced]">Circle hover</span>
+                    </button>
+                    </div>
+                </div>
             </div>
-         </div>
-      </header>
+        </div>
+</header>
 
       <!----- Blog Header Section -->
       <section>
-      <div class="titlebar">
-         <div class="container">
-            <div class="row about-warpper">
-               <div class="col-12">
-                  <div class="flex justify-center items-center h-[50vh] text-lg">
-                     <a href="index.html" class="text-[#5e2ced] font-bold z-10">Home</a><span class="text-[#5e2ced] font-bold ml-4 mr-4 z-10">//</span><a href="about.html" class="text-[#000]">Blog</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      </section>
+        <div class="about-header relative" style="background: url(image/banner_image.jpg);">
+           <div class="container">
+              <div class="row">
+                 <div class="col-12">
+                    <div class="w-full h-[300px] table">
+                       <div class="about-head table-cell align-middle text-lg">
+                          <h1 class="text-[#5e2ced] text-center">BLOG</h1>
+                          <div class="text-center"><a href="index.html" class="text-[#5e2ced] font-bold"><i class="fa-solid fa-house"></i> Home</a><span class="text-[#5e2ced] font-bold ml-4 mr-4">//</span><a href="about.html" class="text-[#000]">Blog</a></div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+       </section>
 
       <!----- Blog Section ----->
       <section>
@@ -217,19 +237,19 @@
 
       <!----- FOOTER ----->
       <section style="margin-bottom: 0!important;">
-        <footer class="new_footer_area bg_color">
-            <div class="new_footer_top">
+        <footer class="new_footer_area bg_color bg-[#fbfbfb]">
+            <div class="new_footer_top pt-[100px] pl-0 pr-0 pb-[100px] relative overflow-x-hidden">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                                 <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                                <p>Don’t miss any updates of our new templates and extensions.!</p>
+                                <p class="text-[16px] font-light leading-[28px] text-[#6a7695] mb-5">Don’t miss any updates of our new templates and extensions.!</p>
                                 <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
                                     <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
-                                    <button class="relative flex h-[50px] w-full items-center justify-center overflow-hidden bg-[#5e2ced] text-white transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#fff] before:duration-500 before:ease-out hover:shadow-[#fff] hover:before:h-56 hover:before:w-80 hover:border hover:border-solid hover:border-[#5e2ced]">
-                                      <span class="relative z-10 hover:text-[#5e2ced]">Circle hover</span>
-                                   </button> 
+                                    <button class="relative mt-5 flex h-[50px] w-full p-3 rounded-full items-center justify-center bg-[#5e2ced] text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#fff] before:duration-500 before:ease-out hover:shadow-[#fff] hover:before:h-[50px] hover:before:w-full hover:border hover:border-solid hover:border-[#5e2ced]">
+                                        <span class="relative z-10 hover:text-[#5e2ced]">Circle hover</span>
+                                        </button>
                                     <p class="mchimp-errmessage" style="display: none;"></p>
                                     <p class="mchimp-sucmessage" style="display: none;"></p>
                                 </form>
@@ -279,7 +299,7 @@
                     <div class="footer_bg_two"></div>
                 </div>
             </div>
-            <div class="footer_bottom">
+            <div class="footer_bottom text-[14px] font-light leading-5 text-[#7f88a6] px-0 py-[27px]">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-sm-7">
@@ -292,11 +312,17 @@
                 </div>
             </div>
         </footer>
+        </section>
      
-     <!----- MAIN JS ----->
-     <script src="js/script.js"></script>
      <!----- VENDORS JS ----->
+     <script src="js/vendors/jquery.slim.min.js"></script>
+      <script src="js/vendors/jquery.min.js"></script>
+      <script src="js/vendors/jquery-ui.min.js"></script>
+      <script src="js/vendors/jquery-3.7.1.min.js"></script>
      <script src="js/vendors/bootstrap.min.js"></script>
      <script src="js/vendors/bootstrap.bundle.min.js"></script>
+     <!----- MAIN JS ----->
+     <script src="js/script.js"></script>
+
   </body>
 </html>

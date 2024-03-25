@@ -594,23 +594,23 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*--============================ ABOUT PAGE START================================--*/
-#mission .mission_menu {
+/* #mission .mission_menu {
     border-radius: 15px;
     padding-top: 30px;
     padding-bottom: 28px;
-  }
+  } */
 
-  #mission .mission_menu ul {
+  /* #mission .mission_menu ul {
     border: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
+  } */
 
-  #mission .mission_menu ul li {
+  /* #mission .mission_menu ul li {
     display: block;
-  }
+  } */
 
   #mission .mission_menu ul li button {
     display: -webkit-box;
@@ -700,12 +700,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
   /*----- Free Seminer Section -----*/
-  .bg-wrapper {
+  /* .bg-wrapper {
     height: 100%;
     width: 101.9%;
     background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #5e2ced );
     position: relative;
-  }
+  } */
   .bg-wrapper .bg-animation {
     height: 60px;
     width: 60px;
@@ -715,8 +715,8 @@ h1, h2, h3, h4, h5, h6 {
     top: 10%;
     left: 10%;
     animation: 4s linear infinite;
-  }
-  .bg-animation .dot {
+  } 
+   .bg-animation .dot {
     height: 10px;
     width: 10px;
     border-radius: 50px;
